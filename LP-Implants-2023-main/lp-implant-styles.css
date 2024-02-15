@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---------------- Normalize  ---------------- */
 .progress, sub, sup {
   vertical-align: baseline;
@@ -373,7 +374,7 @@ body {
 
 p {
   color: #231f20;
-  font: 400 22px/26px "Spartan", sans-serif;
+  font: 300 22px/26px "Spartan", sans-serif;
 }
 
 a {
@@ -456,9 +457,9 @@ main ul li:before {
   color: #fff;
   background-color: #e4b14e;
   border-radius: 35px;
-  font: bold 20px/1.1 "Spartan", sans-serif;
+  font: bold 16px/1.1 "Spartan", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.1em;
 }
 .btn span,
 .btn-alt span {
@@ -714,7 +715,8 @@ header #nav #mobile-btns #mobile-special .container small {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.8px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #FFF;
+  opacity: 0.9;
 }
 
 /* -------------- Banner ----------------- */
@@ -854,66 +856,68 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 /* Reviews */
+/* Reviews */
 #reviews {
   max-width: 1300px;
   margin: 100px auto 0;
 }
-#reviews ul {
+#reviews .review-container {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+}
+#reviews .review-container .top-rated {
+  background: #36468B;
+}
+#reviews .review-container .top-rated .list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6rem;
+}
+#reviews .review-container .top-rated ul {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-#reviews ul li {
+#reviews .review-container .top-rated ul li {
   color: #fff;
   margin: 5px 0;
   font-size: 28px;
   padding-left: 45px;
   font-weight: 300;
 }
-#reviews h4 {
+#reviews .review-container .top-rated h4 {
   font: bold 18px/1 "Spartan", sans-serif;
   margin-bottom: 0;
   color: #fff;
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
-#reviews h3 {
+#reviews .review-container .top-rated h3 {
   font: 600 50px/1 "Spartan", serif;
   margin: 10px auto;
   color: #fff;
 }
-#reviews h3 small {
+#reviews .review-container .top-rated h3 small {
   font-size: 23px;
 }
 #reviews .flex-ed {
-  flex-flow: row wrap;
   justify-content: space-between;
 }
-#reviews .flex-ed:first-of-type {
-  background: #36468B;
-}
-#reviews .flex-ed > div.list {
-  flex: 0 1 660px;
+#reviews figure {
   display: flex;
-  flex-flow: column wrap;
-  padding: 14px 0 51px;
+  flex-direction: column;
 }
 #reviews .caption {
-  position: absolute;
-  bottom: 0;
+  flex: 1;
   font-size: 18px;
-  width: 100%;
   font-weight: bold;
   letter-spacing: 1.3px;
-  background-color: rgb(255, 255, 255);
+  background: #fff;
   padding: 10px;
   text-transform: uppercase;
   color: #231f20;
   font-family: "Spartan", sans-serif;
-  text-transform: uppercase;
-  left: 50%;
-  transform: translateX(-50%);
 }
 #reviews .caption a {
   color: #231f20;
@@ -925,14 +929,9 @@ header #nav #mobile-btns #mobile-special .container small {
 #reviews #mobile-doc {
   display: none;
 }
-#reviews .flex-ed figure img {
-  margin: 0;
-  width: 100%;
-}
 #reviews .review {
   background: #F0F0F0;
-  flex-flow: row;
-  filter: drop-shadow(4px 4px 11px rgba(0, 0, 0, 0.23));
+  flex-direction: row;
 }
 #reviews .review h5 {
   font: normal 30px/1 "Spartan", sans-serif;
@@ -943,6 +942,7 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 0;
 }
 #reviews .review author {
+  padding-top: 1rem;
   color: #121618;
   text-align: left;
   font-size: 15px;
@@ -960,6 +960,7 @@ header #nav #mobile-btns #mobile-special .container small {
 #reviews .review > div {
   padding: 10px;
   display: flex;
+  gap: 1rem;
   flex-flow: column;
   justify-content: center;
   max-width: 1100px;
@@ -975,10 +976,10 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 10px auto;
 }
 #reviews .review p:after {
-  content: "\e838";
+  content: "▯";
   position: absolute;
   right: 0px;
-  top: 56px;
+  top: 6rem;
   font-family: fontello;
   color: #1775C7;
   font-size: 270px;
@@ -1001,7 +1002,7 @@ header #nav #mobile-btns #mobile-special .container small {
   padding: 0;
   margin: auto;
   flex-wrap: nowrap;
-  border-radius: 10px;
+  border-radius: 2rem;
 }
 #mobile-reviews .review-container #google {
   background-color: #fff;
@@ -1011,7 +1012,7 @@ header #nav #mobile-btns #mobile-special .container small {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 2rem;
 }
 #mobile-reviews .review-container #google img {
   padding: 5px 0;
@@ -1023,15 +1024,15 @@ header #nav #mobile-btns #mobile-special .container small {
 #mobile-reviews .review-container #google p {
   color: #e4b14e;
   font-size: 20px;
-  line-height: 1.25;
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
-  font-size: 15px;
   color: #231f20;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
 }
 #mobile-reviews .review-container #google p span {
   width: 100%;
@@ -1045,20 +1046,22 @@ header #nav #mobile-btns #mobile-special .container small {
   left: -50px;
 }
 #mobile-reviews .review-container .comment {
-  flex: 1 1 780px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   padding: 20px 20px 50px;
   text-align: left;
   margin: auto;
 }
 #mobile-reviews .review-container .comment p {
-  font: 400 30px/34px "Spartan", sans-serif;
+  font: 300 21px/34px "Spartan", sans-serif;
   margin-top: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   color: #000;
   letter-spacing: 0.03em;
   text-align: center;
-  line-height: 30px;
+  line-height: 32px;
 }
 #mobile-reviews .review-container .comment .caption2 {
   font: 600 normal 18px/1 "Spartan", sans-serif;
@@ -1298,13 +1301,13 @@ header #nav #mobile-btns #mobile-special .container small {
   color: #36468B;
 }
 #secondary a h3 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 35px;
   letter-spacing: 0.26px;
-  line-height: 1.2;
   margin: 0 auto;
   color: #1a1a1a;
-  font-weight: 500;
   font-family: "Spartan", serif;
-  font-size: 30px;
 }
 #secondary a h3 star:after {
   color: #e4b14e;
@@ -1759,7 +1762,7 @@ hr {
     margin: auto;
   }
   #reviews .review-container .flex-ed figure .caption {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
     padding: 5px;
   }
   .phone {
@@ -1943,8 +1946,20 @@ hr {
   }
 }
 @media (max-width: 790px) {
-  #reviews .review-container .flex-ed figure .caption {
-    display: none;
+  #reviews .review-container .flex-ed {
+    flex-direction: column;
+  }
+  #reviews .review-container .flex-ed .list {
+    padding: 0;
+  }
+  #reviews .review-container .flex-ed figure {
+    flex: 0;
+  }
+  #reviews .review-container .flex-ed figure picture {
+    display: flex;
+  }
+  #reviews .review-container .flex-ed figure picture img {
+    flex: 1;
   }
 }
 @media (max-width: 740px) {
@@ -2096,7 +2111,6 @@ hr {
     font-size: 40px;
   }
   .btn {
-    min-width: auto;
     max-width: 100%;
   }
   #banner .quiz h2 {
@@ -2110,7 +2124,9 @@ hr {
     padding: 5px 25px;
   }
   #options h2 {
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
   }
   #quiz .quiz h2 {
     font-size: 30px;
@@ -2155,6 +2171,9 @@ hr {
     display: block;
     font-size: 5px;
     visibility: hidden;
+  }
+  .btn {
+    min-width: 0;
   }
 }
 @media (max-width: 350px) {

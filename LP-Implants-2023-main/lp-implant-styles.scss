@@ -49,7 +49,7 @@ body {
     color: $text;
     font: 400 18px/26px $font2;
 }
-p {  color: $text; font: 400 22px/26px $font2;}
+p {  color: $text; font: 300 22px/26px $font2;}
 a { display: inline-block; text-decoration: none; cursor: pointer; color: $primary; }
 a:hover {color: $secondary;}
 h1, h2 h3, h4, h5, h6 {font-family: $font;  text-align: center;}
@@ -74,9 +74,10 @@ main ul {list-style: none; padding: 0; margin: 10px auto; text-align: left; disp
     color: #fff;
     background-color: $btn;
     border-radius: 35px;
-    font: bold 20px/1.1 $font2;
+    font: bold 16px/1.1 $font2;
     text-transform: uppercase;
-    letter-spacing: 1.8px;
+  
+    letter-spacing: 0.1em;
     span {text-transform: uppercase; font-size: 13px;  vertical-align: middle; }
     &:hover { background-color:$secondary; color: #fff;}
 }
@@ -175,7 +176,8 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
     }
     .no-shad img {box-shadow: none;}
     &.even figure { order: -1;position: relative;
-        figcaption {width: 100%;left: 0;transform:none;text-transform: uppercase;font-weight: bold;font-size: 16px;letter-spacing: .8px; background-color: rgba(255,255,255,0.8);}
+        figcaption {width: 100%;left: 0;transform:none;text-transform: uppercase;font-weight: bold;font-size: 16px;letter-spacing: .8px; background-color: #FFF;
+            opacity: 0.9;}
     }
 }
 
@@ -221,56 +223,71 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 }
 
 /* Reviews */
+
+
+/* Reviews */
 #reviews { 
     max-width: 1300px; margin: 100px auto 0;
-    ul { display: flex; flex-flow: column; justify-content: center; align-items: flex-start;
-        li {color: #fff; margin: 5px 0;font-size: 28px;padding-left: 45px; font-weight: 300;}
-    }
-    h4 {font: bold 18px/1 $font2; margin-bottom: 0; color: #fff;letter-spacing: 1.4px;text-transform:uppercase;}
-    h3 {
-        small {
-            font-size: 23px;
+    .review-container {
+        display: flex;
+        flex-direction: column;
+        .top-rated {
+            background: $secondary;
+            .list {
+              display: flex;
+              flex-direction: column;
+              padding-left: 6rem;
+            }
+            ul { display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+                li {color: #fff; margin: 5px 0;font-size: 28px;padding-left: 45px; font-weight: 300;}
+            }
+            h4 {font: bold 18px/1 $font2; margin-bottom: 0; color: #fff;letter-spacing: 1.4px;text-transform:uppercase;}
+            h3 {
+                small {
+                    font-size: 23px;
+                }
+                font: 600 50px/1 $font; margin: 10px auto; color: #fff;}
         }
-        font: 600 50px/1 $font; margin: 10px auto; color: #fff;}
+    }
+   
  
-    .flex-ed{ flex-flow: row wrap; justify-content: space-between; 
-    &:first-of-type {background: $secondary;}
-    > div {&.list{ flex: 0 1 660px; display: flex; flex-flow: column wrap; padding: 14px 0 51px; }}
+    .flex-ed{  justify-content: space-between; 
+   
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
     }
     .caption {
-        position: absolute;
-        bottom: 0;
+       flex: 1;
         font-size: 18px;
-        width: 100%;
         font-weight: bold;
         letter-spacing: 1.3px;
-        background-color: rgb(255, 255, 255);
+        background: #fff;
         padding: 10px;
         text-transform:uppercase;
         color: $text;
         font-family: $font2;
-        text-transform: uppercase;
-        left: 50%;
-        transform: translateX(-50%);
         a {color: $text;letter-spacing: 1.6px;
             &:hover {color: $primary}
         }
       }
     #mobile-doc {display:none;}
-    .flex-ed figure img {margin: 0; width: 100%;}
-    .review { background: $tertiary; flex-flow: row; filter: drop-shadow(4px 4px 11px rgba(0, 0, 0, 0.23));
+
+    .review { background: $tertiary; flex-direction: row; 
         h5 {font: normal 30px/1 $font2; margin: 0 0 10px;}
         img {padding: 50px; margin: 0;}
         author {
+            padding-top: 1rem;
             color: #121618; text-align: left; font-size: 15px; line-height: 1; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: flex;  align-items: center; justify-content: flex-start; 
         img {padding: 0;}
         }
-        > div { padding: 10px; display: flex; flex-flow: column; justify-content: center;max-width: 1100px;
+        > div { padding: 10px; display: flex; gap: 1rem;flex-flow: column; justify-content: center;max-width: 1100px;
             margin: 50px auto;
             > * {text-align: left;}
         }
         p { position: relative;font-size: 32px;line-height: 35px;margin: 10px auto;
-            &:after {  content: '\e838'; position: absolute;right: 0px; top: 56px; font-family: fontello; color: #1775C7;font-size: 270px;
+            &:after {  content: "\25AF"; position: absolute;right: 0px; top: 6rem; font-family: fontello; color: #1775C7;font-size: 270px;
                 transform: rotateZ(180deg);
                 opacity: 0.1;}
         }
@@ -295,7 +312,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         margin: auto;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        border-radius: 10px;
+        border-radius: 2rem;
         #google {
             background-color: #fff;
             -webkit-box-flex: 0;
@@ -314,7 +331,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
-            border-radius: 10px 10px 0 0;
+            border-radius: 2rem;
             img {
                 padding: 5px 0;
             }
@@ -325,15 +342,18 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
             p {
                 color: $primary;
                 font-size: 20px;
-                line-height: 1.25;
+               
                 display: flex;
                 flex-wrap: wrap;
                 margin-top: 25px;
-                font-size: 15px;
+               
                 color: $text;
                 letter-spacing: 1.5px;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+                
                 span {width: 100%;}
                 img {margin: auto;}
             }
@@ -344,21 +364,22 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
             }
         }
         .comment {
-            -webkit-box-flex: 1;
-            -ms-flex: 1 1 780px;
-            flex: 1 1 780px;
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
             padding: 20px 20px 50px;
             text-align: left;
             margin: auto;
             p {
-                font: 400 30px/34px $font2;
+                font: 300 21px/34px $font2;
                 margin-top: 0;
                 margin-top: 10px;
                 margin-bottom: 10px;
                 color: #000;
                 letter-spacing: .03em;
                 text-align: center;
-                line-height: 30px;
+              
+                line-height: 32px;
             }
             .caption2 {
                 font: 600 normal 18px/1 $font2;
@@ -439,7 +460,11 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         }
     }
     a h3 {
-        letter-spacing: 0.26px; line-height: 1.2; margin: 0 auto; color: #1a1a1a; font-weight: 500; font-family: $font; font-size: 30px;
+        font-weight: 300;
+font-size: 36px;
+line-height: 35px;
+
+        letter-spacing: 0.26px;  margin: 0 auto; color: #1a1a1a;  font-family: $font; 
         star:after {color: $primary;}
         }
     }
@@ -595,7 +620,7 @@ hr {
                 .list {flex: 100%;}
                 figure {flex: 0 1 600px;
                     margin: auto;
-                    .caption {background-color: rgba(255,255,255,0.8); padding: 5px;}
+                    .caption {background-color: #fff; padding: 5px;}
                 }
             }
         }
@@ -682,7 +707,29 @@ hr {
     .copy {margin-top: 0;}
 }
 @media (max-width: 790px) {
-    #reviews .review-container .flex-ed figure .caption {display:none;}
+    #reviews {
+        
+        .review-container {
+
+        .flex-ed {
+            flex-direction: column;
+            .list {
+                padding: 0;
+            }
+            figure {
+                flex: 0;
+                picture {
+                    display: flex;
+                    img {
+                        flex: 1;
+                    }
+                }
+             }
+            
+        }
+    }
+}
+
 }
 @media (max-width: 740px) {
     #nav .logo { margin-top: 0px; max-width: 100%; flex: 1 1 100%;}
@@ -741,11 +788,14 @@ hr {
         #footer-logo {display:block;}
     }
     #landing-page-form h1 {font-size: 40px;}
-    .btn {min-width: auto;max-width: 100%;}
+    .btn {max-width: 100%;}
     #banner .quiz h2 {font-size: 21px;margin-top: 0;}
     #banner .quiz article {padding: 15px;}
     #banner .quiz .btn {padding: 5px 25px;}
-    #options h2 {font-size: 50px;}
+    #options h2 {font-weight: 600;
+        font-size: 56px;
+        line-height: 68px;
+        }
     #quiz .quiz h2 {font-size: 30px;}
     #quiz article {padding: 20px 10px;}
 }
@@ -761,6 +811,9 @@ hr {
     #services h3 {margin-top: 10px;}
     #services ul li a {font-size: 18px;}
     .copy span:last-of-type {display: block; font-size: 5px; visibility: hidden; }
+    .btn {
+        min-width: 0;
+    }
 }
 
   @media (max-width: 350px) {
@@ -775,6 +828,7 @@ hr {
     #banner article {min-width: 250px;}
     #quiz .quiz .btn {font-size: 18px;}
     footer article {margin: 20px;}
+  
 }
  
 
