@@ -273,7 +273,6 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
         }
       }
     #mobile-doc {display:none;}
-
     .review { background: $tertiary; flex-direction: row; 
         h5 {font: normal 30px/1 $font2; margin: 0 0 10px;}
         img {padding: 50px; margin: 0;}
@@ -287,14 +286,14 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
             > * {text-align: left;}
         }
         p { position: relative;font-size: 32px;line-height: 35px;margin: 10px auto;
-            &:after {  content: "\25AF"; position: absolute;right: 0px; top: 6rem; font-family: fontello; color: #1775C7;font-size: 270px;
+            &:after {  content: "\e838"; position: absolute;right: 0px; top: 6rem; font-family: fontello; color: #e4b14e;font-size: 270px;
                 transform: rotateZ(180deg);
                 opacity: 0.1;}
         }
     }
 }
 
-/* -- mobile reviews -- */
+/* -- mobile reviewssss -- */
 #mobile-reviews {
 	background-color: $tertiary;
 	padding: 100px 30px;
