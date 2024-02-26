@@ -1,0 +1,72 @@
+<h1>Implant Quiz</h1>
+<p>Gracias por su interés en Sunrise Dental Center. Por favor llene su información en el formulario a continuación y un miembro de nuestro equipo se comunicará con usted pronto.</p>
+<div id="implant-quiz">
+	<form action="https://tnt-adder.herokuapp.com/submit/0a697639-bcc3-49e6-8187-04fe43b3defa" class="forms" method="post">
+		<div>
+            <input name="first_name" required="true" type="text" placeholder="Nombre">
+            <input name="last_name" type="text" placeholder="Last Name">
+        </div>
+		<div>
+            <input name="email" required="true" type="text" placeholder="Correo electrónico">
+            <input name="phone" type="text" required="true" placeholder="Número de teléfono">
+        </div>
+		<div id="questions">
+            <div>
+                <label for="affected">¿Está afectado por alguna de las siguientes condiciones?</label>
+                <div class="answers">
+                    <span><input name="affected" type="radio" value="Missing a Single Tooth">Me falta un solo diente</span>
+                    <span><input name="affected" type="radio" value="Missing Multiple Teeth">Me faltan varios dientes</span>
+                    <span><input name="affected" type="radio" value="Poor Fitting Traditional Dentures">Tengo dentaduras postizas tradicionales que no ajustan bien</span>
+                    <span><input name="affected" type="radio" value="Most teeth in bad shape">La mayoría de mis dientes están en mal estado</span>
+                    <span><input name="affected" type="radio" value="None">None</span>
+                </div>
+            </div>
+            <div>
+                <label for="cant_enjoy_certain_foods">¿Hay cierta comida que no puedes disfrutar debido a que te faltan dientes?</label>
+                <div class="answers">
+                    <span><input name="cant_enjoy_certain_foods" type="radio" value="Steak Dinner">Una cena de bistec</span>
+                    <span><input name="cant_enjoy_certain_foods" type="radio" value="Apples or other hard fruit">Manzanas u otras frutas duras</span>
+                    <span><input name="cant_enjoy_certain_foods" type="radio" value="Popcorn, nuts, or other snacks">Palomitas de maíz, nueces u otros bocadillos</span>
+                    <span><input name="cant_enjoy_certain_foods" type="radio" value="Something Else">Otra cosa</span>
+                    <span><input name="cant_enjoy_certain_foods" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div>
+                <label for="need_relief_from_pain">¿Actualmente necesita alivio del dolor o malestar?</label>
+                <div class="answers">
+                    <span><input name="need_relief_from_pain" type="radio" value="Yes">Sí</span>
+                    <span><input name="need_relief_from_pain" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div>
+                <label for="hiding_smile">¿Te encuentras ocultando tu sonrisa en público?</label>
+                <div class="answers">
+                    <span><input name="hiding_smile" type="radio" value="Yes">Yes</span>
+                    <span><input name="hiding_smile" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div>
+                <label for="payment_plan">¿Está interesado en un plan de pago para financiar implantes dentales?</label>
+                <div class="answers">
+                    <span><input name="payment_plan" type="radio" value="Sí, podría pagar hasta $100 por mes.">Sí, podría pagar hasta $100 por mes.</span>
+                    <span><input name="payment_plan" type="radio" value="Sí, podría pagar hasta $200 por mes.">Sí, podría pagar hasta $200 por mes.</span>
+                    <span><input name="payment_plan" type="radio" value="Sí, podría pagar hasta $300 por mes.">Sí, podría pagar hasta $300 por mes.</span>
+                    <span><input name="payment_plan" type="radio" value="No necesito un plan de pago.">No necesito un plan de pago.</span>
+                </div>
+            </div>
+            <div>
+                <label for="anything_preventing_restoration">¿Hay algo que le impide recuperar su sonrisa?</label>
+                <div class="answers">
+                    <span><input name="anything_preventing_restoration" type="radio" value="¡No! Estoy listo para arreglar mi sonrisa hoy.">¡No! Estoy listo para arreglar mi sonrisa hoy.</span>
+                    <span><input name="anything_preventing_restoration" type="radio" value="Costo del tratamiento">Costo del tratamiento</span>
+                    <span><input name="anything_preventing_restoration" type="radio" value="Miedo del dentista">Miedo del dentista</span>
+                    <span><input name="anything_preventing_restoration" type="radio" value="Compromiso de tiempo">Compromiso de tiempo</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn">Entregar</button>
+		<input name="_redirect" type="hidden" value="thanks.html">
+		<input name="_subject" type="hidden" value="PPC LP Implant Quiz">
+	</form>
+</div>

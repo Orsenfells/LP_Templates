@@ -279,11 +279,11 @@ footer {
 }
 
 .flex-ed {
-  -webkit-box-orient: horizontal;
+  flex-direction: row;
 }
 
 .col-flex-ed {
-  flex-flow: column;
+  flex-direction: column;
 }
 
 star {
@@ -315,7 +315,6 @@ star:after {
   display: flex;
   z-index: 150;
 }
-
 #fixed-tabs a {
   font-size: 16px;
   color: #fff;
@@ -328,15 +327,12 @@ star:after {
 #fixed-tabs a i:before {
   font-size: 20px;
 }
-
 #fixed-tabs a:first-of-type {
   flex-basis: 50%;
 }
-
 #fixed-tabs a:nth-of-type(odd) {
   background-color: #c78e1e;
 }
-
 #fixed-tabs a:nth-of-type(even) {
   background-color: #2b376e;
 }

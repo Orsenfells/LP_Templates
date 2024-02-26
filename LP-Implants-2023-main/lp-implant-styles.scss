@@ -12,23 +12,26 @@ $font: 'Spartan', serif;
 $font2: 'Spartan', sans-serif;
 $text: #231f20;
 
-.flex-ed, .col-flex-ed { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.flex-ed { -webkit-box-orient: horizontal; -webkit-box-direction: normal;  }
-.col-flex-ed{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column;-ms-flex-flow:column}
+.flex-ed, .col-flex-ed {display: flex;}
+.flex-ed { flex-direction: row; }
+.col-flex-ed{flex-direction: column;}
 star{line-height:1;margin:7px auto;display:block}
 star:after{font-size:22px;font-family:'fontello';font-weight:400;margin:0;font-style:normal;content:'\e80f \e80f \e80f \e80f \e80f';color: $primary;padding:0 10px; letter-spacing: 8.8px;}
 
 
 /* -------  Fixed Tabs ------------ */
-#fixed-tabs {position: fixed;bottom: 0; right: 0; width: 100%;  text-align: center; line-height: 1; display: flex; z-index: 150;}
-#fixed-tabs a {  font-size: 16px; color: #fff; font-weight: 700; text-transform: uppercase;padding: 14px 0;  flex: 1; flex-basis: 25%; 
-    i {
-        &:before {font-size: 20px;}
-    }
-}
-#fixed-tabs a:first-of-type {flex-basis: 50%;}
-#fixed-tabs a:nth-of-type(odd) { background-color: darken($primary, 15%);}
-#fixed-tabs a:nth-of-type(even) { background-color: darken($secondary, 8%); }
+#fixed-tabs {position: fixed;bottom: 0; right: 0; width: 100%;  text-align: center; line-height: 1; display: flex; z-index: 150;
+                a {  font-size: 16px; color: #fff; font-weight: 700; text-transform: uppercase;padding: 14px 0;  flex: 1; flex-basis: 25%; 
+                    i {
+                        &:before {font-size: 20px;}
+                    }
+                }
+                a:first-of-type {flex-basis: 50%;}
+                a:nth-of-type(odd) { background-color: darken($primary, 15%);}
+                a:nth-of-type(even) { background-color: darken($secondary, 8%); }
+            }
+
+
 @media (min-width:1031px) {
   #fixed-tabs { display: none; }
 }
