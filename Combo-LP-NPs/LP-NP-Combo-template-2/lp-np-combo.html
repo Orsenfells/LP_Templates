@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/wcz6cvp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;604&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script async src='https://tag.simpli.fi/sifitag/d0839950-0d38-0137-dfb5-06a9ed4ca31b'></script>
 </head>
 <body class="page_$var(pageURL)$">
 <div id="fixed-tabs">
-    <a href="lp-np-combo-form.html" class="ra">
+    <a href="sunrise-combo-form.html" class="ra">
             <span><i class="icon-calendar-1"></i><em>Request</em></span>
             <span>Request<strong> Appointment</strong></span>
         </a>
@@ -44,20 +44,20 @@
                 <i class="icon-phone"></i>(713) 869-9973
             </a>
             <address>
-                <a href="" target="_blank" class="address">
+                <a href="https://www.google.com/maps/place/Sunrise+Dental+Center/@29.811245,-95.410507,16z/data=!4m5!3m4!1s0x0:0x83d58c4f10225f3a!8m2!3d29.8112445!4d-95.4105053?hl=en-US" target="_blank" class="address">
                     <i class="icon-location"></i>
                     2707 N Shepherd Dr Houston, TX
                 </a>
             </address>
         </div>
  
-        <a href="lp-np-combo-form.html" class="btn"><i class="icon-calendar-1"></i>Request An Appointment</a>
+        <a href="sunrise-combo-form.html" class="btn"><span>Request</span> an Appointment</a>
         <div id="mobile-btns">
 			<a href="tel:7138699973" class="phone">
 				<span>Call Today!</span>
 				(713) 869-9973
 			</a>
-			<a href="lp-np-combo-form.html" class="btn">
+			<a href="sunrise-combo-form.html" class="btn">
 				<span>Request
                 </span>
 				An Appointment
@@ -67,7 +67,7 @@
 </header>
 
 <main>
-    <div id="safe-bar"><span>New Patients Welcome</span><span>•</span><span>Same-Day Appointments Available</span><span>•</span><span>We Speak Spanish!</span></div>
+    <div id="safe-bar"><span>New Patients Welcome</span><span class="dot">•</span><span>Same-Day Appointments Available</span><span class="dot">•</span><span>We Speak Spanish!</span></div>
     <section id="banner">
         <figure>
             <picture>
@@ -75,6 +75,7 @@
                 <source media="(min-width: 790px)" srcset="assets/images/lp-np-combo-banner.jpg" />
                 <img src="assets/images/lp-np-combo-banner.jpg" alt="smiling family in Worcester" />
             </picture>
+            <figcaption>Our Amazing Dental Team</figcaption>
         </figure>
       </section>
     
@@ -88,7 +89,7 @@
     <section id="looking"> 
         <div class="flex-row">
             <div class="personalized">
-                <h1><span>Have a</span> Dental Emergency?</h1>
+                <h2><span>Have a</span> Dental Emergency?</h2>
                 <div class="list">
                     <ul>
                         <li>Tooth Pain & Sensitivity</li>
@@ -100,6 +101,7 @@
             </div>
             <div class="personalized">
                 <h2><span>Looking for a </span> New Dentist?</h2>
+                <h2 class="mobile"><span>Looking for </span>A New Dentist?</h2>
                 <div class="list">
                     <ul>
                         <li>Check-Ups & Cleanings</li>
@@ -135,10 +137,6 @@
             
             <div class="insurance-logos">
                 <img src="assets/images/lp-combo-ins-2.png" alt="">
-                <img src="assets/images/lp-combo-ins-1.png" alt="">
-                <img src="assets/images/lp-combo-ins-3.png" alt="">
-                <img src="assets/images/lp-combo-ins-4.png" alt="">
-                <img src="assets/images/lp-combo-ins-5.png" alt="">
             </div>
                 <p id="plan-note">
                     Note: If you do not see your plan, do not worry. Call. We welcome other plans.
@@ -149,30 +147,28 @@
 
         </section>
     
-        <div class="bkgrd">
-            <section id="dentist" class="container split even">
-                <article>
-                    <h2>It All Starts with You</h2>
-                    <p>You will be amazed at the friendliness and thoroughness of all we do. With a passion for helping people smile, our team will provide you with a complete assessment of your teeth, gums and jaw.  We will take all necessary x-rays and devote the time to answer all your questions.
-
-
-                    </p>
-                    <p>If a dental emergency is the reason for your visit, our first priority is to get you out of pain.
-
-                    </p>
-                 
-                </article>
+    
+        <section id="dentist" class="flex-row">
+            <div class="container flex-row">
                 <figure>
                     <picture>
                         <source media="(max-width: 790px)" srcset="assets/images/lp-combo-doc-mobile.jpg" />
                         <source media="(min-width: 790px)" srcset="assets/images/lp-combo-doc.jpg" />
                         <img src="assets/images/lp-combo-doc.jpg" alt="doctor comforting patient" />
                     </picture>
-                    <figcaption><a href="" target="_blank">Dr. Thomas With Patient</a> </figcaption>
+                    <figcaption><a href="meet-your-dentists.html" target="_blank">Dr. Thomas With Patient</a> </figcaption>
                 </figure>
-            
-            </section>
-        </div>    
+                <article>
+                    <h2>It All Starts with You</h2>
+                    <p>You will be amazed at the friendliness and thoroughness of all we do. With a passion for helping people smile, our team will provide you with a complete assessment of your teeth, gums and jaw.  We will take all necessary x-rays and devote the time to answer all your questions.
+                    </p>
+                    <p>If a dental emergency is the reason for your visit, our first priority is to get you out of pain.
+                    </p>
+                
+                </article>
+            </div>
+        </section>
+      
     
         <section id="reviews">
             <div id="review-container" >
@@ -212,18 +208,18 @@
     <div class="container flex-ed">
         <div id="footer-info">
             <img alt="practice logo" src="assets/images/np-combo-logo-footer.png">
-            <a href="tel:+6238490477" class="phone"> <small>Call Now</small>(623) 849-0477</a>
+            <a href="tel:+7138699973" class="phone"> <small>Call Now</small>(713) 869-9973</a>
             <p>
                 To Schedule an<br>
                 <span>Appointment</span>
             </p>
-            <a href="https://goo.gl/UuXNZV" target="_blank" class="address"> 
+            <a href="https://www.google.com/maps/place/Sunrise+Dental+Center/@29.811245,-95.410507,16z/data=!4m5!3m4!1s0x0:0x83d58c4f10225f3a!8m2!3d29.8112445!4d-95.4105053?hl=en-US" target="_blank" class="address"> 
                 2707 N Shepherd Dr Houston, TX 77008
             </a>
         </div>
         <article id="contact">
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.043356593787!2d-112.22381438501966!3d33.474221955416034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b156eaf76ea87%3A0xb9a824b357f3bfa!2sSmile+Fitness+Dental+Center+-+Phoenix!5e0!3m2!1sen!2sus!4v1503502359659" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6923.674562135011!2d-95.410507!3d29.811245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c773f7462b83%3A0x83d58c4f10225f3a!2sSunrise%20Dental%20Center!5e0!3m2!1sen!2sus!4v1688995487162!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            </div>                
         </article>
     </div>

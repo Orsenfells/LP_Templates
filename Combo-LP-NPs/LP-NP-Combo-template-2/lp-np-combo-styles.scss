@@ -2,15 +2,31 @@ $white: #fff;
 $star: #febb21;
 $primary: #144981;
 $secondary: #36468B; // #looking footer
-$tertiary:#073C57;
+$tertiary:#36468b; // h2 looking:span
 $section-alt: #0E7DC1; // review section 
-$misc: #E4B14E; // btn icons
+$misc: #E4B14E; // btn icons footer phone
 $text: #000;
 
-$font: "Montserrat", sans-serif;
-$font2: "Bebas Neue", sans-serif;
+$font: "Spartan" ;
+$font2: "Spartan";
+// font variable
+$nav-phone-font: bold 40px/37px $font;
+$safe-bar-font: normal 24px/20px $font;
+$nav-req-btn: normal 21px $font;
+$banner-bar-font: normal 30px/38px $font;
+$looking-h2-font: bold 35px/38px $font;
+$understand-p-font: normal 20px/30px $font;
+$review-font: normal 25px/39px $font;
+$h2-sections: bold 40px/20px $font;
+$p-sections: normal 19px/30px $font;   // insurance about
+$footer-h2: bold 65px/38px $font;
 
+$nav-mobile-btn-phone: normal clamp(.5rem, 5.2vw, 25px)/28px "Spartan";
+$nav-mobile-btn-req: 600 clamp(0.5rem, 3.6vw, 18px)/17px "Spartan";
 
+main {
+	background-color: #F2F5F7;
+}
 /* keyframes */
 @-webkit-keyframes fadeIn {
 	from{opacity:0}
@@ -112,8 +128,8 @@ address{font-style:normal!important}
 .fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}
 .fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}
 .star:before {font-size:28px;font-family:'fontello';font-weight:400;margin:0;font-style:normal;content:'\e80f \e80f \e80f \e80f \e80f';color:$star;letter-spacing:8.4px}
-p{font:300 20px/30px $font;color:$text}
-h2{text-align:left;color: $tertiary;font-size:48px;text-transform:uppercase;line-height:1.2;font-family:$font2!important; font-weight: 600;
+p{font: $p-sections;color:$text}
+h2{text-align:left;color: $tertiary;font-family:$font2!important; font: $h2-sections;
 	}
 h3{font-size:32px;line-height:1.41;margin-top:10px}
 h2,h3,h4,h5,h6{font-family:$font}
@@ -133,20 +149,34 @@ figure{display:block;margin:0}
 /* header */
 header{position:relative;padding:0;z-index:100;background-color: #fff;
     address{padding:0 8px;}
-    .address{text-align:left;display:flex;align-items: center;color: #000;font-size:17px;line-height:1.25;font-weight:400;letter-spacing:.55px;
+    .address{text-align:left;display:flex;align-items: center;color: #000;
+		font-weight: normal;
+font-size: 20px;
+line-height: 27px;
+
         &:hover{color:$primary}
         i:before {color:$misc;font-size: 22px;margin-left: -10px;margin-right: 15px;margin-top: -5px;}
     }
 	#nav{padding: 10px;display:flex;flex-wrap:wrap;max-width:1300px;justify-content:space-between;margin:auto;align-items:center;
-		.btn{margin: 0;padding: 13px 30px;text-transform:uppercase;display: flex;transition: 0.3s all ease;flex-wrap: wrap;justify-content: center;font-size:18px;background-color: $misc;max-width: 470px;display:flex;color: #fff;font-family: $font;font-weight: 400;letter-spacing: 2px;border-radius: 30px;
+		.btn{
+		display: flex;transition: 0.3s all ease;justify-content: center;background-color: $misc;color: #fff;border-radius: .4rem; font: $nav-req-btn;
+			flex-direction: column;
+			margin: 0;
+			padding: 1.4rem 2.7rem 0.5rem;
 			i:before {margin-right: 10px;margin-top: -2px;}
-			span {display: block;width: 100%;font-size: 44px;text-transform: uppercase;font-weight: 600;}
+			span {display: block;width: 100%;text-transform: uppercase;
+				font-weight: bold;
+				font-size: 40px;
+				letter-spacing: 0.05em;
+				line-height: 37px;
+				
+			}
 			&:hover {background-color: $tertiary;color: #fff;}
 		}
 		.logo {
 		}
 		#header-details {
-			.pho {margin-bottom: 10px;font-weight: 600;font-size: 35px;
+			.pho {margin-bottom: 10px;font: $nav-phone-font;
 				&:hover {color: $primary;}
 			}
 		}
@@ -155,16 +185,15 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 			> * {flex: 1;height: 64px;}
 			.btn {
 				display: flex;
-				flex-wrap: wrap;
+				
 				padding: 10px;
 				justify-content: center;
-				line-height: 1;
+				font: $nav-mobile-btn-req;
 				color: #fff;
 				border-radius: 0;
-				
+		
 				margin: auto;
-				font-weight: 600;
-  font-size: 17px;
+				
 				text-transform: uppercase;
 				span {
 					width: 100%;font-size: 28px;
@@ -172,14 +201,17 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 			}
 			.phone, .btn {
 				display: flex;
-				flex-wrap: wrap;
+				flex-direction: column;
 				justify-content: center;
 				align-content: center;
+	
+				padding: 2.6rem 0;
 				span {
 					width: 100%;
 				}
 			  }
-			.phone {background-color: $secondary;color: #fff;font-size: 23px;line-height: 1;
+			.phone {background-color: $secondary;color: #fff;
+				font: $nav-mobile-btn-phone;
 				span {text-transform: uppercase;font-size: 16px;font-weight: 700;letter-spacing: 1px;}
 			}
 			#mobile-special {
@@ -209,8 +241,8 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 	-webkit-box-shadow: 1.6px 2.5px 13px rgba(7,8,8,0.35);
 	box-shadow: 1.6px 2.5px 13px rgba(7,8,8,0.35);
 	color: #fff;
-	font: 700 24px/1.2 $font;
-	padding: 10px;
+	font: $safe-bar-font;
+	padding: 14px;
 	text-align: center;
 	span {
 		margin: 0 30px;
@@ -278,12 +310,12 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 		margin: 0;
 		text-align: center;
 		color: $white;
-		font: 400 46px/1.1 $font2;
+		font: $looking-h2-font;
 		position: relative;
-		line-height: 1;
-		text-transform:uppercase;
+		
+		text-transform:capitalize;
 		margin-top: 0;
-		font-family: $font2;
+	
 		span {
 			font-family: $font;
 			letter-spacing: normal;
@@ -294,6 +326,9 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 			margin-bottom: 5px;
 			width: 100%;
 		}
+	}
+	h2.mobile {
+		display: none;
 	}
 	h1 {
 		position: relative;
@@ -322,6 +357,43 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 				width: 80px;
 			}
 		}
+	}
+.list {
+	position: relative;
+}
+	.list::before {
+		position: absolute;
+		content: "";
+  border: 6px solid #454647;
+opacity: .3;
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: rgb(69, 70, 71);
+  height: 110%;
+  left: -43px;
+  bottom: 6px;
+  width: 2rem;
+  border-right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+	}
+	.list::after {
+		position: absolute;
+		content: "";
+		border: 6px solid #454647;
+
+  opacity: .3;
+
+  height: 110%;
+  right: -43px;
+  bottom: 6px;
+  width: 2rem;
+  border-left: 0;
+  border-radius: 0 .5rem .5rem 0;
+	}
+}
+.personalized:nth-of-type(2) {
+	.list::before, .list:after {
+		width: 5rem;
 	}
 }
 .header-info {
@@ -434,7 +506,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 		margin: 10px;
 		-webkit-box-flex: 0;
 		-ms-flex: 0 1 585px;
-		flex: 0 1 585px;
+		flex: 0 1 613px;
 	}
 	figure {
 		img {
@@ -456,6 +528,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 	figure {
 		margin-top: 0;
 		position: relative;
+		
 		img {
 			position: relative;
 			width: 100%;
@@ -470,12 +543,12 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 	}
 	figcaption {
 		position: absolute;
-		bottom: 80px;
+		top: 0;
 		font-size: 16px;
-		left: 25%;
+		right: 10%;
 		color: $text;
 		background: rgba(255,255,255,0.8);
-		padding: 5px 20px;
+		padding: 0.8rem 2rem;
 		font-family: $font;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -492,14 +565,13 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 	max-width: 1200px;
 	#top-dentist {display:none;}
 	h2 {
-		font-family: $font!important;
-		font-size: 33px;
+		font: $banner-bar-font;
 		color: $text;
 		text-transform:none;
 		// margin: 30px 30px 30px 60px;
-		margin: 12px 31px 20px 36px;
-		font-weight: 300;
-		letter-spacing: 2px;
+		margin: 0;
+		padding: 2rem 0rem 0.6rem 2rem;
+		
 	}
 	.special-badge {
 		position: absolute;
@@ -637,22 +709,21 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 	margin: 70px auto 20px;
 	box-shadow: 1px 4px 6px lightgray;
 	border-radius: 5px;
-	background-color: $primary;
+	background-color: #fff;
 	padding: 20px;
 	p {
-		font-size: 20px;
-		font-weight: 400;
-		line-height: 30px;
+		font: $understand-p-font;
 		margin: auto;
 		padding: 15px 10px;
 		text-align: center;
 		-webkit-box-align: center;
-		color: #fff;
+		color: $text;
 		-ms-flex-align: center;
 		align-items: center;
 		span {
 			font-size: 30px;
 			font-weight: 400;
+			color: $text;
 		}
 	}
 	.flex-ed {
@@ -692,7 +763,7 @@ header{position:relative;padding:0;z-index:100;background-color: #fff;
 		.insurance-logos {
 			display: flex;
 			align-items: center;
-			margin: 2rem auto;
+			margin: 0rem auto 2rem;
 		}
 		#plan-note {
 			color: #252627;
@@ -713,8 +784,7 @@ opacity: 0.5;
 		position: relative;
 		text-align: center;
 		z-index: 2;
-		padding: 10px 20px 15px;
-		margin: 10px auto -15px;
+		
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
@@ -773,21 +843,35 @@ opacity: 0.5;
 #dentist {
 	position: relative;
 	z-index: 2;
-	margin: 0 auto;
-	padding: 20px 10px 60px;
-	-ms-flex-wrap: nowrap;
-	flex-wrap: nowrap;
+	justify-content: center;
+	padding: 3rem 1rem 6rem;
+	.flex-row {
+		max-width: 1200px;
+		gap: 3rem;
+	}
 	article {
 		text-align: left;
-		padding: 5px;
+	
+		flex: 1;
 		h2 {
 			margin-top: 0;
 			span {color: $tertiary;}
 		}
+		p {
+			margin: 2.7rem 0;
+			font-weight: normal;
+			font-size: 29px;
+			line-height: 36px;
+
+		}
 	}
 	figure {
 		position: relative;
-		margin-bottom: -1px;
+		display: flex;
+		picture {
+			display: flex;
+		}
+		
 		figcaption {position: absolute;bottom: 0;width: 100%;padding: 10px;background: rgba(255,255,255,0.9);
 			a {color: $text;font-weight: 500;font-weight: 600;
 				letter-spacing: 1.4px;
@@ -820,8 +904,8 @@ opacity: 0.5;
 	}
 }
 #reviews {
-	background: $secondary;
-	padding: 4rem 1rem;
+	background: $section-alt;
+	padding: 9rem 1rem;
 }
 #review-container {
 	display: flex;
@@ -836,7 +920,7 @@ opacity: 0.5;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0 1rem;
+  padding: 0 3rem;
    span {
 	font-weight: 600;
   font-size: 18px;
@@ -855,13 +939,10 @@ opacity: 0.5;
 	.comment {
 	background-color: #F2F5F7;
 	padding: 4rem 3rem 3rem 5rem;
-  border-radius: 1rem;
+	border-radius: 0 1rem 1rem 0;
   text-align: left;
 		p {
-			font-family:$font;
-			font-weight: 300;
-			font-size: 24px;
-			line-height: 37px;
+			font: $review-font;
 						color: $text;
 			margin: 0;
 		}
@@ -889,8 +970,7 @@ opacity: 0.5;
 		align-items: center;
 		position: relative;
 		z-index: 2;
-		padding: 10px 20px 15px;
-		margin: auto;
+		margin-bottom: 3rem;
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
@@ -935,6 +1015,7 @@ opacity: 0.5;
 		margin: auto;
 		-ms-flex-wrap: nowrap;
 		flex-wrap: nowrap;
+		gap: .5rem;
 		>div {
 			margin: 10px;
 		}
@@ -1087,17 +1168,13 @@ footer {
 	padding-top: 30px;
 	background-color: $secondary;
 	.flex-ed {
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: space-evenly;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: flex-start;
-		margin: auto auto 50px;
+		
+		justify-content: center;
+		gap: 2rem;
+
+		margin: auto auto 9rem;
 		max-width: 1300px;
-		#footer-info, #map {
-			height: 450px;
-		}
+		
 	}
 	#footer-info {
 		padding: 10px 30px;
@@ -1107,9 +1184,10 @@ footer {
 		flex-wrap: wrap;
 		align-content: center;
 		align-items: center;
-		max-width: 490px;
+		max-width: 380px;
 		justify-content: center;
-		img {max-width: 250px;}
+		img {margin: 0;}
+		gap: .7rem;
 		p {
 			text-transform: uppercase;
 			font-size: 19px;
@@ -1119,7 +1197,7 @@ footer {
 				span {font-size: 32px;}
 		}
 	}
-	h2 {text-align:center;color: $white;font-size: 60px;
+	h2 {text-align:center;color: $white; font: $footer-h2;
 		span {color: $tertiary}
 		&.mobile {
 			display: none;
@@ -1140,15 +1218,19 @@ footer {
 	}
 	#contact {
 		color: $white;
-		flex: 0 1 750px;
+		flex: 0 1 40rem;
+		padding: 0;
 		h3 {
 			font-size: 30px;
 			margin-bottom: 0;
 		}
+		#map {
+			margin: 0;
+		}
 	}
 	.phone {
 		font-size: 31px;
-		color: $primary;
+		color: $misc;
 		margin: 20px auto 0;
 		font-weight: 700;
 		display: block;
@@ -1165,8 +1247,10 @@ color: #000;
 		}
 	}
 	.address {
-		font-size: 20px;
-		line-height: 25px;
+		font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+
 		margin: 5px;
 		&:hover {
 			color: $primary;
@@ -1189,7 +1273,7 @@ color: #000;
 		line-height: 18px;
 	}
 	a {
-		color: #d6d6d6;
+		color: #E4B14E;
 		&:hover {
 			color: #fff;
 		}
@@ -1502,11 +1586,12 @@ color: #000;
 	}
 }
 @media (max-width: 1000px) {
-	#exceptional.active {width: 100%;height: auto;}
-	h2 {text-align:center;display: flex;
-		flex-wrap: wrap;}
+	.flex-row {
+		flex-direction: column;
+	}
+
 	.personalized h2 span {width: 100%;}
-	.personalized h2 {display:block;}
+
 	footer .address {font-size: 18px;}
 	header {
 		address {
@@ -1574,19 +1659,31 @@ color: #000;
 		padding: 0;
 	}
 	#dentist {
-		display: block;
-		padding: 10px 0 0;
-		article {
-			padding: 10px;
-		}
+		.flex-row {
+			flex-direction: column-reverse;
+		} 
 		figure {
 			margin: auto;
 			max-width: 600px;
 			padding: 0;
-			padding-bottom: 60px;
+		
 			a {bottom: 60px;max-height: 47px;}
 		}
+		article {
+			p {
+				text-align: center;
+			}
+		}
 	}
+
+	#dentist, #practice, .insurance {
+		h2 {position: relative;display: flex;justify-content: center;padding-bottom: 30px;
+			&:before {display:none;}
+			&:after {content: '';bottom: 0;width: 150px;margin: auto;height: 2px;background-color: #000;position: absolute;}
+		}
+	}
+
+
 	#reviews {
 		padding: 0;
 	}
@@ -1641,7 +1738,7 @@ color: #000;
 			flex-direction: column;
   height: unset;
   gap: 0.7rem;
-  padding: 4rem 3rem 3rem;
+  padding: 4rem 2rem 3rem;
 		}
 
 		.address {
@@ -1678,15 +1775,10 @@ color: #000;
 	#nav #header-details,#nav > .btn {display:none;}
 	#nav .logo {margin: 15px auto;}
 	#nav {padding: 0;}
-	#dentist, #practice, .insurance {
-		h2 {position: relative;display: flex;justify-content: center;padding-bottom: 30px;
-			&:before {display:none;}
-			&:after {content: '';bottom: 0;width: 150px;margin: auto;height: 2px;background-color: #000;position: absolute;}
-		}
-	}
-	#practice h2 {padding-bottom: 20px;margin-bottom: 20px;}
+
+	#practice h2 {padding-bottom: 20px;margin-bottom: 2rem;}
 	.insurance {
-		h2 {margin-bottom: 20px!important;
+		h2 {
 			&:before {display:none;}
 			&:after {margin: auto;}
 		}
@@ -1745,12 +1837,63 @@ color: #000;
 	}
 	#safe-bar {
 		color: $white;
-		background-color:#144981;
-		span {
-			&:nth-of-type(2) {
+		background-color:$section-alt;
+		gap: .5rem;
+
+		.dot {
+			
 				display: none;
+		
+		}
+	}
+	.insurance {
+		h2 {
+			font: bold clamp(1rem,9.1vw,2.5rem)/45px $font
+		}
+	}
+	#dentist, #practice {
+		h2 {
+			font: bold clamp(1rem, 12.1vw, 5.5rem)/4.1rem"Spartan";
+		}
+	}
+	#looking {
+		width: 100%;
+		.flex-row {
+			flex-direction: column;
+gap: 3rem;
+
+padding: 5rem 2rem;
+
+			.personalized {
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+				justify-content: center;
+				flex: 1;
+				align-items: center;
+				padding: 4rem 2rem 4rem;
+				h2, .list  {
+					margin: 0;
+					padding: 0;
+				}
+				h2 {
+					font: bold clamp(1rem,9.5vw,3rem) $font
+				}
+				&:nth-of-type(2) {
+					h2 {
+						display: none;
+					}
+					.mobile {
+						display: block;
+					}
+				}
 			}
 		}
+	}
+	.looking {
+		background-color: #F2F5F7;
+		border: none;
+		box-shadow: none;
 	}
 	.mobile-banner-reviews {
 		display: block;
@@ -1855,24 +1998,29 @@ color: #000;
 		text-align: center;
 	}
 	#reviews {
-
+		padding: 7rem 2rem 6rem;
 		#review-container {
+			padding: 0;
 			#google {border-radius:10px 10px 0 0;flex: auto;}
 			.comment {
-				p {font-size: 24px;text-align: center;line-height: 34px;}
+				padding-bottom: 3rem;
+				p {font-size: 24px;text-align: center;line-height: 34px;
+				}
 				.caption2 {font-size: 18px;width: 100%;}
 			}
 		}
 	}
-	footer #footer-info {padding: 10px;}
+	
 	#practice {
 		p {
 			text-align: center;
 			font-size: 22px;
+		
 		}
-		padding-bottom: 20px;
+		padding-bottom: 5rem;
 		.flex-ed {
-			display: block;
+			display: flex;
+			flex-direction: column;
 			>div {
 				margin: 0 auto;
 				right: 0;
@@ -1885,15 +2033,16 @@ color: #000;
 			margin-top: 20px;
 		}
 	}
-	#dentist {
-		figure {
-			margin-top: -20px;padding-bottom: 20px;
-		}
-	}
+
 	footer {
+		.flex-ed {
+			padding: 0 1rem;
+			margin-bottom: 6rem;
+		}
 		h2 {
-			font-size: 46px;
+			font-size: clamp(1rem,14.5vw,6rem);
 			justify-content:center;
+			line-height: 7rem;
 		}
 		.split {
 			>div {
@@ -1905,6 +2054,14 @@ color: #000;
 			margin: 20px auto 30px;
 			max-width: 550px;
 		}
+		.address {
+			font-size: 20px;
+line-height: 25px;
+
+		}
+		#contact {
+			display: none;
+		}
 	}
 	.hours {
 		margin: 20px auto;
@@ -1913,22 +2070,25 @@ color: #000;
 @media (max-width: 700px) {
 	main {display:flex;flex-wrap:wrap;}
 	#banner-bar {border-radius: 0;background-color: #fff;order: -1;
-		img {margin: 20px auto 40px;}
-		h2 {color: $text;}
+	
+		display: flex;
+		flex-direction: column;
+		padding: 3rem 3rem 6rem;
+		gap: 2rem;
+		img {}
+		h2 {color: $text;
+			margin: 0;padding: 0;}
+			
 	}
 	#banner-bar div {margin: auto;}
-	#banner {border-bottom: 15px solid $tertiary;width: 100%;}
+	#banner {border-bottom: 15px solid $tertiary;width: 100%;
+		figcaption {
+			bottom: 0;width: 100%;left: 0;background-color: #fff;padding: 8px;position: static;font-size: 14px;
+		}}
 	#safe-bar {order: -2; font-weight: 400;}
 	#banner-bar #top-dentist {display:block!important;margin: 40px auto;}
 	#credentials span {flex: 100%;margin: 30px auto;}
-	.personalized {max-width: 375px; margin: 
-		h1 {
-			font-size: 36px;
-		}
-		h2 {
-			font-size: 44px;
-		}
-	}
+	
 	.looking {
 		margin: 20px;
 		border-radius: 1rem;
@@ -1960,11 +2120,11 @@ color: #000;
 		}
 	}
 	#reviews {
-		background: $primary;
+		background: $section-alt;
 		#review-container {
 			background: #fff;
 			border-radius: 1rem;
-			padding: 4rem 1rem;
+			
 		}
 		#caption > .star {
 			display: none;
@@ -1998,16 +2158,11 @@ color: #000;
 		div {
 			display: block;
 		}
-		h2 {
-			margin: 20px auto;
-		}
+	
 	}
 }
 @media (max-width: 590px) {
-	h2 {
-		font-size: 36px;
-		margin-top: 10px;
-	}
+
 	#safe-bar {
 		font-size: 20px;
 		span {
@@ -2036,12 +2191,12 @@ color: #000;
 		}
 	}
 	footer {
+		
 		h2 {
-			margin: 3rem 4rem 3rem 4rem;
-			font-size: 85px;
-			justify-content:center;
-			margin-top: 0;
-			padding: 0 10px;
+			font-weight: bold;
+			font-size: clamp(1rem,14.5vw,6rem);
+			line-height: 92px;
+
 		}
 		article {
 			padding-top: 20px;
@@ -2082,9 +2237,7 @@ color: #000;
 }
 @media (max-width: 500px) {
 	#banner {
-		figcaption {
-			bottom: 0;width: 100%;left: 0;background-color: #fff;padding: 8px;position: static;font-size: 14px;
-		}
+	
 		.reader-stamp {
 			position: relative;
 			right: auto;
@@ -2095,18 +2248,10 @@ color: #000;
 	}
 }
 @media (max-width: 480px) {
-	.personalized {
-		h1, h2 {
-			font-size: 40px;
-		}
-	}
-	h2 {
-		font-size: 40px;
-	}
+
+
 	footer {
-		h2 {
-			font-size: 70px;
-		}
+	
 		#contact {
 			max-width: 410px;
 		}
@@ -2125,9 +2270,7 @@ color: #000;
 			display: none;
 		}
 	}
-	.bkgrd {
-		padding-bottom: 25px;
-	}
+
 	.copy {
 		span {
 			&:last-of-type {
@@ -2184,14 +2327,8 @@ color: #000;
 			font-size: 15px;
 		}
 	}
-	#dentist {
-		.caption {
-			font-size: 14px;
-		}
-	}
-	h2 {
-		font-size: 42px;
-	}
+
+
 	.insurance {
 		h2 {
 			margin: 10px 0 -15px;

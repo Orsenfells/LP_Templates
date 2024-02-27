@@ -1,3 +1,7 @@
+main {
+  background-color: #F2F5F7;
+}
+
 /* keyframes */
 @keyframes fadeIn {
   from {
@@ -79,7 +83,7 @@ body {
   margin: 0;
   position: relative;
   background-color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
   text-align: center;
 }
 
@@ -202,11 +206,11 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0 0 0.67em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
   margin: 0;
   text-align: center;
   color: #fff;
-  font: 400 44px/1.1 "Montserrat", sans-serif;
+  font: 400 44px/1.1 "Spartan";
   font-size: 26px;
   font-weight: 300;
   display: block;
@@ -376,18 +380,15 @@ address {
 }
 
 p {
-  font: 300 20px/30px "Montserrat", sans-serif;
+  font: normal 19px/30px "Spartan";
   color: #000;
 }
 
 h2 {
   text-align: left;
-  color: #073C57;
-  font-size: 48px;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-family: "Bebas Neue", sans-serif !important;
-  font-weight: 600;
+  color: #36468b;
+  font-family: "Spartan" !important;
+  font: bold 40px/20px "Spartan";
 }
 
 h3 {
@@ -397,7 +398,7 @@ h3 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
 }
 
 .progress {
@@ -447,7 +448,7 @@ details {
 figcaption {
   display: block;
   text-align: center;
-  font: 400 18px/1 "Montserrat", sans-serif;
+  font: 400 18px/1 "Spartan";
   text-transform: uppercase;
   color: #144981;
 }
@@ -457,7 +458,7 @@ strong {
   font-weight: 400;
   display: block;
   font-size: 28px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
   text-transform: uppercase;
 }
 
@@ -481,10 +482,9 @@ header .address {
   display: flex;
   align-items: center;
   color: #000;
-  font-size: 17px;
-  line-height: 1.25;
-  font-weight: 400;
-  letter-spacing: 0.55px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
 }
 header .address:hover {
   color: #144981;
@@ -506,22 +506,16 @@ header #nav {
   align-items: center;
 }
 header #nav .btn {
-  margin: 0;
-  padding: 13px 30px;
-  text-transform: uppercase;
   display: flex;
   transition: 0.3s all ease;
-  flex-wrap: wrap;
   justify-content: center;
-  font-size: 18px;
   background-color: #E4B14E;
-  max-width: 470px;
-  display: flex;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  letter-spacing: 2px;
-  border-radius: 30px;
+  border-radius: 0.4rem;
+  font: normal 21px "Spartan";
+  flex-direction: column;
+  margin: 0;
+  padding: 1.4rem 2.7rem 0.5rem;
 }
 header #nav .btn i:before {
   margin-right: 10px;
@@ -530,18 +524,19 @@ header #nav .btn i:before {
 header #nav .btn span {
   display: block;
   width: 100%;
-  font-size: 44px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  line-height: 37px;
 }
 header #nav .btn:hover {
-  background-color: #073C57;
+  background-color: #36468b;
   color: #fff;
 }
 header #nav #header-details .pho {
   margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 35px;
+  font: bold 40px/37px "Spartan";
 }
 header #nav #header-details .pho:hover {
   color: #144981;
@@ -556,15 +551,12 @@ header #nav #mobile-btns > * {
 }
 header #nav #mobile-btns .btn {
   display: flex;
-  flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
-  line-height: 1;
+  font: 600 clamp(0.5rem, 3.6vw, 18px)/17px "Spartan";
   color: #fff;
   border-radius: 0;
   margin: auto;
-  font-weight: 600;
-  font-size: 17px;
   text-transform: uppercase;
 }
 header #nav #mobile-btns .btn span {
@@ -573,9 +565,10 @@ header #nav #mobile-btns .btn span {
 }
 header #nav #mobile-btns .phone, header #nav #mobile-btns .btn {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+  padding: 2.6rem 0;
 }
 header #nav #mobile-btns .phone span, header #nav #mobile-btns .btn span {
   width: 100%;
@@ -583,8 +576,7 @@ header #nav #mobile-btns .phone span, header #nav #mobile-btns .btn span {
 header #nav #mobile-btns .phone {
   background-color: #36468B;
   color: #fff;
-  font-size: 23px;
-  line-height: 1;
+  font: normal clamp(0.5rem, 5.2vw, 25px)/28px "Spartan";
 }
 header #nav #mobile-btns .phone span {
   text-transform: uppercase;
@@ -599,7 +591,7 @@ header #nav #mobile-btns #mobile-special .container {
   padding: 5px;
 }
 header #nav #mobile-btns #mobile-special .container h4 {
-  color: #073C57;
+  color: #36468b;
   font-size: 22px;
   margin: 0;
 }
@@ -640,8 +632,8 @@ header #nav #mobile-btns #mobile-special .container small {
   z-index: 10;
   box-shadow: 1.6px 2.5px 13px rgba(7, 8, 8, 0.35);
   color: #fff;
-  font: 700 24px/1.2 "Montserrat", sans-serif;
-  padding: 10px;
+  font: normal 24px/20px "Spartan";
+  padding: 14px;
   text-align: center;
   flex-wrap: wrap;
   display: flex;
@@ -657,7 +649,7 @@ header #nav #mobile-btns #mobile-special .container small {
 .pho {
   display: flex;
   color: #000;
-  font: 700 37px/30px "Montserrat", sans-serif;
+  font: 700 37px/30px "Spartan";
 }
 .pho span {
   display: block;
@@ -665,7 +657,7 @@ header #nav #mobile-btns #mobile-special .container small {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
 }
 .pho:hover {
   color: #144981;
@@ -731,15 +723,13 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 0;
   text-align: center;
   color: #fff;
-  font: 400 46px/1.1 "Bebas Neue", sans-serif;
+  font: bold 35px/38px "Spartan";
   position: relative;
-  line-height: 1;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-top: 0;
-  font-family: "Bebas Neue", sans-serif;
 }
 .personalized h2 span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
   letter-spacing: normal;
   font-size: 24px;
   font-weight: 400;
@@ -748,17 +738,20 @@ header #nav #mobile-btns #mobile-special .container small {
   margin-bottom: 5px;
   width: 100%;
 }
+.personalized h2.mobile {
+  display: none;
+}
 .personalized h1 {
   position: relative;
   line-height: 1;
   margin-top: 0;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Spartan";
   font-size: 50px;
 }
 .personalized h1 span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
   letter-spacing: normal;
   text-transform: none;
   font-size: 24px;
@@ -772,6 +765,40 @@ header #nav #mobile-btns #mobile-special .container small {
 .personalized:last-of-type .border-box:after {
   width: 80px;
 }
+.personalized .list {
+  position: relative;
+}
+.personalized .list::before {
+  position: absolute;
+  content: "";
+  border: 6px solid #454647;
+  opacity: 0.3;
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: rgb(69, 70, 71);
+  height: 110%;
+  left: -43px;
+  bottom: 6px;
+  width: 2rem;
+  border-right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.personalized .list::after {
+  position: absolute;
+  content: "";
+  border: 6px solid #454647;
+  opacity: 0.3;
+  height: 110%;
+  right: -43px;
+  bottom: 6px;
+  width: 2rem;
+  border-left: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.personalized:nth-of-type(2) .list::before, .personalized:nth-of-type(2) .list:after {
+  width: 5rem;
+}
 
 .header-info {
   display: contents;
@@ -782,7 +809,7 @@ header #nav #mobile-btns #mobile-special .container small {
   font-size: 22px;
   line-height: 1.25;
   font-weight: 300;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
 }
 .address:hover {
   color: #000;
@@ -838,7 +865,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 .split article {
   margin: 10px;
-  flex: 0 1 585px;
+  flex: 0 1 613px;
 }
 .split figure img {
   position: relative;
@@ -871,13 +898,13 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 #banner figcaption {
   position: absolute;
-  bottom: 80px;
+  top: 0;
   font-size: 16px;
-  left: 25%;
+  right: 10%;
   color: #000;
   background: rgba(255, 255, 255, 0.8);
-  padding: 5px 20px;
-  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 2rem;
+  font-family: "Spartan";
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.65px;
@@ -896,13 +923,11 @@ header #nav #mobile-btns #mobile-special .container small {
   display: none;
 }
 #banner-bar h2 {
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 33px;
+  font: normal 30px/38px "Spartan";
   color: #000;
   text-transform: none;
-  margin: 12px 31px 20px 36px;
-  font-weight: 300;
-  letter-spacing: 2px;
+  margin: 0;
+  padding: 2rem 0rem 0.6rem 2rem;
 }
 #banner-bar .special-badge {
   position: absolute;
@@ -1035,7 +1060,7 @@ header #nav #mobile-btns #mobile-special .container small {
 .list ul li {
   width: 100%;
   color: #fff;
-  font: 400 24px/1.2 "Montserrat", sans-serif;
+  font: 400 24px/1.2 "Spartan";
   letter-spacing: 0.6px;
   padding-left: 32px;
   padding-top: 10px;
@@ -1057,23 +1082,22 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 70px auto 20px;
   box-shadow: 1px 4px 6px lightgray;
   border-radius: 5px;
-  background-color: #144981;
+  background-color: #fff;
   padding: 20px;
 }
 .looking p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
+  font: normal 20px/30px "Spartan";
   margin: auto;
   padding: 15px 10px;
   text-align: center;
   -webkit-box-align: center;
-  color: #fff;
+  color: #000;
   align-items: center;
 }
 .looking p span {
   font-size: 30px;
   font-weight: 400;
+  color: #000;
 }
 .looking .flex-ed {
   max-width: 660px;
@@ -1117,7 +1141,7 @@ header #nav #mobile-btns #mobile-special .container small {
 .insurance .container .insurance-logos {
   display: flex;
   align-items: center;
-  margin: 2rem auto;
+  margin: 0rem auto 2rem;
 }
 .insurance .container #plan-note {
   color: #252627;
@@ -1139,14 +1163,12 @@ header #nav #mobile-btns #mobile-special .container small {
   position: relative;
   text-align: center;
   z-index: 2;
-  padding: 10px 20px 15px;
-  margin: 10px auto -15px;
   justify-content: center;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Spartan";
 }
 .insurance h2 span {
   margin: 0 10px;
-  color: #073C57;
+  color: #36468b;
 }
 .insurance h2:before {
   content: "";
@@ -1179,7 +1201,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 .insurance #disclaimer {
   opacity: 0.4;
-  font: 400 14px/1 "Montserrat", sans-serif;
+  font: 400 14px/1 "Spartan";
   margin-top: 20px;
   text-align: center;
 }
@@ -1191,23 +1213,35 @@ header #nav #mobile-btns #mobile-special .container small {
 #dentist {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
-  padding: 20px 10px 60px;
-  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 3rem 1rem 6rem;
+}
+#dentist .flex-row {
+  max-width: 1200px;
+  gap: 3rem;
 }
 #dentist article {
   text-align: left;
-  padding: 5px;
+  flex: 1;
 }
 #dentist article h2 {
   margin-top: 0;
 }
 #dentist article h2 span {
-  color: #073C57;
+  color: #36468b;
+}
+#dentist article p {
+  margin: 2.7rem 0;
+  font-weight: normal;
+  font-size: 29px;
+  line-height: 36px;
 }
 #dentist figure {
   position: relative;
-  margin-bottom: -1px;
+  display: flex;
+}
+#dentist figure picture {
+  display: flex;
 }
 #dentist figure figcaption {
   position: absolute;
@@ -1241,7 +1275,7 @@ header #nav #mobile-btns #mobile-special .container small {
   display: inline-block;
   padding: 10px;
   text-align: center;
-  font: 400 16px/1 "Montserrat", sans-serif;
+  font: 400 16px/1 "Spartan";
   bottom: 0;
   margin: auto;
 }
@@ -1253,8 +1287,8 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 #reviews {
-  background: #36468B;
-  padding: 4rem 1rem;
+  background: #0E7DC1;
+  padding: 9rem 1rem;
 }
 
 #review-container {
@@ -1269,7 +1303,7 @@ header #nav #mobile-btns #mobile-special .container small {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 #review-container .google-logo-ctn span {
   font-weight: 600;
@@ -1287,14 +1321,11 @@ header #nav #mobile-btns #mobile-special .container small {
 #review-container .comment {
   background-color: #F2F5F7;
   padding: 4rem 3rem 3rem 5rem;
-  border-radius: 1rem;
+  border-radius: 0 1rem 1rem 0;
   text-align: left;
 }
 #review-container .comment p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 37px;
+  font: normal 25px/39px "Spartan";
   color: #000;
   margin: 0;
 }
@@ -1303,7 +1334,7 @@ header #nav #mobile-btns #mobile-special .container small {
   justify-content: flex-end;
 }
 #review-container .comment #caption .caption2 {
-  font: 600 18px/1 "Montserrat", sans-serif;
+  font: 600 18px/1 "Spartan";
   text-transform: uppercase;
   margin: 10px 20px 10px 0;
   letter-spacing: 0.1em;
@@ -1320,16 +1351,15 @@ header #nav #mobile-btns #mobile-special .container small {
   align-items: center;
   position: relative;
   z-index: 2;
-  padding: 10px 20px 15px;
-  margin: auto;
+  margin-bottom: 3rem;
   justify-content: center;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Spartan";
   text-align: center;
   max-width: 1100px;
 }
 #practice h2 span {
   margin: 0 10px;
-  color: #073C57;
+  color: #36468b;
 }
 #practice h2:before {
   content: "";
@@ -1360,6 +1390,7 @@ header #nav #mobile-btns #mobile-special .container small {
   max-width: 1120px;
   margin: auto;
   flex-wrap: nowrap;
+  gap: 0.5rem;
 }
 #practice .flex-ed > div {
   margin: 10px;
@@ -1471,7 +1502,7 @@ header #nav #mobile-btns #mobile-special .container small {
   font-size: 17px;
   color: #144981;
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
   text-align: left !important;
 }
 
@@ -1499,13 +1530,10 @@ footer {
   background-color: #36468B;
 }
 footer .flex-ed {
-  justify-content: space-evenly;
-  align-items: flex-start;
-  margin: auto auto 50px;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto auto 9rem;
   max-width: 1300px;
-}
-footer .flex-ed #footer-info, footer .flex-ed #map {
-  height: 450px;
 }
 footer #footer-info {
   padding: 10px 30px;
@@ -1515,11 +1543,12 @@ footer #footer-info {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  max-width: 490px;
+  max-width: 380px;
   justify-content: center;
+  gap: 0.7rem;
 }
 footer #footer-info img {
-  max-width: 250px;
+  margin: 0;
 }
 footer #footer-info p {
   text-transform: uppercase;
@@ -1534,10 +1563,10 @@ footer #footer-info p span {
 footer h2 {
   text-align: center;
   color: #fff;
-  font-size: 60px;
+  font: bold 65px/38px "Spartan";
 }
 footer h2 span {
-  color: #073C57;
+  color: #36468b;
 }
 footer h2.mobile {
   display: none;
@@ -1554,15 +1583,19 @@ footer article {
 }
 footer #contact {
   color: #fff;
-  flex: 0 1 750px;
+  flex: 0 1 40rem;
+  padding: 0;
 }
 footer #contact h3 {
   font-size: 30px;
   margin-bottom: 0;
 }
+footer #contact #map {
+  margin: 0;
+}
 footer .phone {
   font-size: 31px;
-  color: #144981;
+  color: #E4B14E;
   margin: 20px auto 0;
   font-weight: 700;
   display: block;
@@ -1570,7 +1603,7 @@ footer .phone {
   letter-spacing: 0.28px;
 }
 footer .phone:hover {
-  color: #073C57;
+  color: #36468b;
 }
 footer .phone small {
   font-size: 19px;
@@ -1579,6 +1612,7 @@ footer .phone small {
   color: #000;
 }
 footer .address {
+  font-weight: normal;
   font-size: 20px;
   line-height: 25px;
   margin: 5px;
@@ -1592,7 +1626,7 @@ footer .address:hover {
   background-color: #000;
   margin: auto;
   letter-spacing: 1px;
-  font: 300 14px/1.4 "Montserrat", sans-serif;
+  font: 300 14px/1.4 "Spartan";
   color: #fff;
   text-transform: uppercase;
 }
@@ -1604,7 +1638,7 @@ footer .address:hover {
   line-height: 18px;
 }
 .copy a {
-  color: #d6d6d6;
+  color: #E4B14E;
 }
 .copy a:hover {
   color: #fff;
@@ -1692,7 +1726,7 @@ footer .address:hover {
   color: #fff;
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan";
 }
 
 /* -- video -- */
@@ -1984,20 +2018,11 @@ footer .address:hover {
   }
 }
 @media (max-width: 1000px) {
-  #exceptional.active {
-    width: 100%;
-    height: auto;
-  }
-  h2 {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+  .flex-row {
+    flex-direction: column;
   }
   .personalized h2 span {
     width: 100%;
-  }
-  .personalized h2 {
-    display: block;
   }
   footer .address {
     font-size: 18px;
@@ -2063,22 +2088,38 @@ footer .address:hover {
   .bkgrd {
     padding: 0;
   }
-  #dentist {
-    display: block;
-    padding: 10px 0 0;
-  }
-  #dentist article {
-    padding: 10px;
+  #dentist .flex-row {
+    flex-direction: column-reverse;
   }
   #dentist figure {
     margin: auto;
     max-width: 600px;
     padding: 0;
-    padding-bottom: 60px;
   }
   #dentist figure a {
     bottom: 60px;
     max-height: 47px;
+  }
+  #dentist article p {
+    text-align: center;
+  }
+  #dentist h2, #practice h2, .insurance h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  #dentist h2:before, #practice h2:before, .insurance h2:before {
+    display: none;
+  }
+  #dentist h2:after, #practice h2:after, .insurance h2:after {
+    content: "";
+    bottom: 0;
+    width: 150px;
+    margin: auto;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
   }
   #reviews {
     padding: 0;
@@ -2129,7 +2170,7 @@ footer .address:hover {
     flex-direction: column;
     height: unset;
     gap: 0.7rem;
-    padding: 4rem 3rem 3rem;
+    padding: 4rem 2rem 3rem;
   }
   footer .address {
     margin-top: 0;
@@ -2174,30 +2215,9 @@ footer .address:hover {
   #nav {
     padding: 0;
   }
-  #dentist h2, #practice h2, .insurance h2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-  }
-  #dentist h2:before, #practice h2:before, .insurance h2:before {
-    display: none;
-  }
-  #dentist h2:after, #practice h2:after, .insurance h2:after {
-    content: "";
-    bottom: 0;
-    width: 150px;
-    margin: auto;
-    height: 2px;
-    background-color: #000;
-    position: absolute;
-  }
   #practice h2 {
     padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
-  .insurance h2 {
-    margin-bottom: 20px !important;
+    margin-bottom: 2rem;
   }
   .insurance h2:before {
     display: none;
@@ -2249,7 +2269,7 @@ footer .address:hover {
   header .header-info .phone {
     font-size: 21px;
     padding: 10px;
-    background-color: #073C57;
+    background-color: #36468b;
     color: #fff;
     flex: 0 1 50%;
   }
@@ -2258,10 +2278,52 @@ footer .address:hover {
   }
   #safe-bar {
     color: #fff;
-    background-color: #144981;
+    background-color: #0E7DC1;
+    gap: 0.5rem;
   }
-  #safe-bar span:nth-of-type(2) {
+  #safe-bar .dot {
     display: none;
+  }
+  .insurance h2 {
+    font: bold clamp(1rem, 9.1vw, 2.5rem)/45px "Spartan";
+  }
+  #dentist h2, #practice h2 {
+    font: bold clamp(1rem, 12.1vw, 5.5rem)/4.1rem "Spartan";
+  }
+  #looking {
+    width: 100%;
+  }
+  #looking .flex-row {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5rem 2rem;
+  }
+  #looking .flex-row .personalized {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    padding: 4rem 2rem 4rem;
+  }
+  #looking .flex-row .personalized h2, #looking .flex-row .personalized .list {
+    margin: 0;
+    padding: 0;
+  }
+  #looking .flex-row .personalized h2 {
+    font: bold clamp(1rem, 9.5vw, 3rem) "Spartan";
+  }
+  #looking .flex-row .personalized:nth-of-type(2) h2 {
+    display: none;
+  }
+  #looking .flex-row .personalized:nth-of-type(2) .mobile {
+    display: block;
+  }
+  .looking {
+    background-color: #F2F5F7;
+    border: none;
+    box-shadow: none;
   }
   .mobile-banner-reviews {
     display: block;
@@ -2360,9 +2422,18 @@ footer .address:hover {
   .comment {
     text-align: center;
   }
+  #reviews {
+    padding: 7rem 2rem 6rem;
+  }
+  #reviews #review-container {
+    padding: 0;
+  }
   #reviews #review-container #google {
     border-radius: 10px 10px 0 0;
     flex: auto;
+  }
+  #reviews #review-container .comment {
+    padding-bottom: 3rem;
   }
   #reviews #review-container .comment p {
     font-size: 24px;
@@ -2373,18 +2444,16 @@ footer .address:hover {
     font-size: 18px;
     width: 100%;
   }
-  footer #footer-info {
-    padding: 10px;
-  }
   #practice {
-    padding-bottom: 20px;
+    padding-bottom: 5rem;
   }
   #practice p {
     text-align: center;
     font-size: 22px;
   }
   #practice .flex-ed {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #practice .flex-ed > div {
     margin: 0 auto;
@@ -2396,13 +2465,14 @@ footer .address:hover {
   #practice .pager {
     margin-top: 20px;
   }
-  #dentist figure {
-    margin-top: -20px;
-    padding-bottom: 20px;
+  footer .flex-ed {
+    padding: 0 1rem;
+    margin-bottom: 6rem;
   }
   footer h2 {
-    font-size: 46px;
+    font-size: clamp(1rem, 14.5vw, 6rem);
     justify-content: center;
+    line-height: 7rem;
   }
   footer .split {
     display: block;
@@ -2413,6 +2483,13 @@ footer .address:hover {
   footer article {
     margin: 20px auto 30px;
     max-width: 550px;
+  }
+  footer .address {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  footer #contact {
+    display: none;
   }
   .hours {
     margin: 20px auto;
@@ -2427,19 +2504,31 @@ footer .address:hover {
     border-radius: 0;
     background-color: #fff;
     order: -1;
-  }
-  #banner-bar img {
-    margin: 20px auto 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem 6rem;
+    gap: 2rem;
   }
   #banner-bar h2 {
     color: #000;
+    margin: 0;
+    padding: 0;
   }
   #banner-bar div {
     margin: auto;
   }
   #banner {
-    border-bottom: 15px solid #073C57;
+    border-bottom: 15px solid #36468b;
     width: 100%;
+  }
+  #banner figcaption {
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 8px;
+    position: static;
+    font-size: 14px;
   }
   #safe-bar {
     order: -2;
@@ -2452,14 +2541,6 @@ footer .address:hover {
   #credentials span {
     flex: 100%;
     margin: 30px auto;
-  }
-  .personalized {
-    max-width: 375px;
-    margin: h1;
-    margin-font-size: 36px;
-  }
-  .personalized h2 {
-    font-size: 44px;
   }
   .looking {
     margin: 20px;
@@ -2490,12 +2571,11 @@ footer .address:hover {
     margin-bottom: 0;
   }
   #reviews {
-    background: #144981;
+    background: #0E7DC1;
   }
   #reviews #review-container {
     background: #fff;
     border-radius: 1rem;
-    padding: 4rem 1rem;
   }
   #reviews #caption > .star {
     display: none;
@@ -2522,15 +2602,8 @@ footer .address:hover {
   #banner-bar div {
     display: block;
   }
-  #banner-bar h2 {
-    margin: 20px auto;
-  }
 }
 @media (max-width: 590px) {
-  h2 {
-    font-size: 36px;
-    margin-top: 10px;
-  }
   #safe-bar {
     font-size: 20px;
   }
@@ -2560,11 +2633,9 @@ footer .address:hover {
     flex: 100%;
   }
   footer h2 {
-    margin: 3rem 4rem 3rem 4rem;
-    font-size: 85px;
-    justify-content: center;
-    margin-top: 0;
-    padding: 0 10px;
+    font-weight: bold;
+    font-size: clamp(1rem, 14.5vw, 6rem);
+    line-height: 92px;
   }
   footer article {
     padding-top: 20px;
@@ -2600,15 +2671,6 @@ footer .address:hover {
   }
 }
 @media (max-width: 500px) {
-  #banner figcaption {
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 8px;
-    position: static;
-    font-size: 14px;
-  }
   #banner .reader-stamp {
     position: relative;
     right: auto;
@@ -2618,15 +2680,6 @@ footer .address:hover {
   }
 }
 @media (max-width: 480px) {
-  .personalized h1, .personalized h2 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 40px;
-  }
-  footer h2 {
-    font-size: 70px;
-  }
   footer #contact {
     max-width: 410px;
   }
@@ -2641,9 +2694,6 @@ footer .address:hover {
   }
   .border-box:after {
     display: none;
-  }
-  .bkgrd {
-    padding-bottom: 25px;
   }
   .copy span:last-of-type {
     display: block;
@@ -2686,12 +2736,6 @@ footer .address:hover {
   }
   .comment .caption2 {
     font-size: 15px;
-  }
-  #dentist .caption {
-    font-size: 14px;
-  }
-  h2 {
-    font-size: 42px;
   }
   .insurance h2 {
     margin: 10px 0 -15px;
