@@ -1,0 +1,2554 @@
+/* ---------------- Normalize  ---------------- */
+.progress, sub, sup {
+  vertical-align: baseline;
+}
+
+.block, .elem-left, .elem-right, article, aside, details, figcaption, figure, footer, header, hr, main, menu, nav, section, summary {
+  display: block;
+}
+
+hr, sub, sup {
+  position: relative;
+}
+
+body, figure {
+  margin: 0;
+}
+
+button, hr, input, select {
+  overflow: visible;
+}
+
+[type=checkbox], [type=radio], legend {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 0.67em;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 60%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.45em;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  border: 0;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  line-height: initial;
+  margin: 0;
+}
+
+optgroup {
+  font-weight: 700;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+  border: 0;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:-moz-focusring, input:-moz-focusring {
+  outline: ButtonText dotted 1px;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+address {
+  font-style: normal !important;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.icon-gplus:before {
+  margin-left: -1px !important;
+}
+
+.page_index main, .page_index > hr {
+  display: none !important;
+}
+
+a, ::before, ::after, img, figure, article, li, #fixed-tabs, #header, #banner, h1, h2, h3, h4, h5, h6, .btn, .btn-alt, .btn:before, .btn-alt:before {
+  transition: all 0.2s;
+}
+
+i {
+  display: inline;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=" icon-"]:before, [class^=icon-]:before {
+  line-height: 1 !important;
+  display: block !important;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.shadow {
+  box-shadow: 0 0 3px #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a, .btn {
+  cursor: pointer;
+}
+
+header {
+  z-index: 99;
+}
+
+footer {
+  z-index: 100;
+} /* ---------------- Animations  ---------------- */
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes slideIn {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+} /* ---------------- Global Styles  ---------------- */
+.flex-ed, .col-flex-ed {
+  display: flex;
+}
+
+.flex-ed {
+  -webkit-box-orient: horizontal;
+}
+
+.col-flex-ed {
+  flex-flow: column;
+}
+
+star {
+  line-height: 1.5;
+  display: block;
+}
+
+star:after {
+  font-size: 22px;
+  font-family: "fontello";
+  font-weight: 400;
+  margin: 0;
+  font-style: normal;
+  content: "\e80f\e80f\e80f\e80f\e80f";
+  color: #ffd775;
+  padding: 0 10px;
+  letter-spacing: 7.5px;
+}
+
+@font-face {
+  font-family: "Hijrnotes";
+  src: url("Hijrnotes.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* -------  Fixed Tabs ------------ */
+#fixed-tabs {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  display: flex;
+  z-index: 1100;
+}
+
+#fixed-tabs a {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 0;
+  flex: 1;
+}
+
+#fixed-tabs .ra {
+  flex: 2;
+}
+
+#fixed-tabs a:nth-of-type(odd) {
+  background-color: #252C33;
+}
+
+#fixed-tabs a:nth-of-type(even) {
+  background-color: #003875;
+}
+
+@media (min-width: 1031px) {
+  #fixed-tabs {
+    display: none;
+  }
+}
+@media (max-width: 1030px) {
+  #fixed-tabs i {
+    display: inline-block;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  footer {
+    margin-bottom: 42px !important;
+  }
+}
+@media (max-width: 600px) {
+  #fixed-tabs strong {
+    display: none;
+  }
+}
+/* ---------------- page foundation ---------- */
+body {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+  font: 400 18px/26px "Saol Display";
+}
+
+p {
+  color: #000;
+  font: 400 18px/26px "Saol Display";
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #003875;
+}
+
+a:hover {
+  color: #252C33;
+}
+
+h1,
+h2 h3,
+h4,
+h5,
+h6 {
+  font-family: "Saol Display";
+  text-align: center;
+}
+
+h1 {
+  font: 500 90px/1 "Lato", sans-serif;
+  color: #252C33;
+  display: block;
+}
+
+h2 {
+  font: 600 60px/1.1 "Lato", sans-serif;
+  color: #000;
+  letter-spacing: normal;
+  margin: 10px 0;
+}
+
+h3 {
+  font: 400 33px/1 "Lato", sans-serif;
+  color: #fff;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+  text-align: left;
+  display: table;
+}
+main ul li {
+  position: relative;
+  padding-left: 35px;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 10px auto;
+}
+main ul li:before {
+  content: "\e832";
+  font-family: fontello;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #003875;
+}
+
+/*  --------------  Buttons ----------------- */
+.btn,
+.btn-alt {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #003875;
+  font: 700 20px/1.1 "Saol Display";
+  text-transform: uppercase;
+  min-width: 350px;
+}
+.btn span,
+.btn-alt span {
+  text-transform: uppercase;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.btn:hover,
+.btn-alt:hover {
+  background-color: #252C33;
+}
+
+header {
+  position: relative;
+  padding: 0;
+  z-index: 100;
+  background-color: transparent;
+}
+header address {
+  display: block;
+  margin-top: 15px;
+}
+header #mobile-btns {
+  width: 100%;
+  display: flex;
+}
+header #mobile-btns > * {
+  flex: 0 1 50%;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+}
+header #mobile-btns .btn {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: clamp(0.8rem, 4vw, 28px);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background-color: #CDBD9B;
+  gap: 0;
+}
+header #mobile-btns .btn span {
+  font-family: "Lato", sans-serif;
+  font-size: clamp(0.8rem, 6.2vw, 28px);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+header #mobile-btns .phone,
+header #mobile-btns .btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+header #mobile-btns .phone span,
+header #mobile-btns .btn span {
+  width: 100%;
+}
+header #mobile-btns .phone {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: clamp(0.6rem, 5.1vw, 2rem);
+  background-color: #252C33;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 50%;
+}
+header #mobile-btns .phone:hover {
+  background-color: #252C33;
+}
+header #mobile-btns .phone span {
+  font-family: "Lato", sans-serif;
+  font-size: clamp(0.6rem, 3.5vw, 17.1px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+header #mobile-btns #mobile-special .container {
+  margin: 10px 0;
+  border-top: 2px solid #afb1b1;
+  border-bottom: 2px solid #afb1b1;
+  padding: 5px;
+}
+header #mobile-btns #mobile-special .container h4 {
+  color: #CDBD9B;
+  font-size: 22px;
+  margin: 0;
+}
+header #mobile-btns #mobile-special .container small {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+}
+
+.fix-nav header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-name: slideIn;
+  z-index: 1100;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+address a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-family: "Saol Display";
+}
+address a i {
+  margin-right: 10px;
+}
+address a:hover {
+  color: #003875;
+}
+
+.phone {
+  display: flex;
+  color: #000;
+  font: 600 45px/30px "Saol Display";
+  margin: auto;
+}
+.phone span {
+  color: #000;
+  display: block;
+  font: 700 14px/24px "Saol Display";
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  display: block;
+  margin-bottom: 5px;
+}
+.phone:hover {
+  color: #252C33;
+}
+
+#nav {
+  display: flex;
+  max-width: 1600px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 25px 10px;
+}
+#nav .header-details {
+  display: flex;
+  justify-content: center;
+}
+#nav .header-details address {
+  display: flex;
+  flex-direction: column;
+}
+#nav .header-details address > div {
+  display: flex;
+}
+#nav .header-details address span {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #003875;
+  text-transform: uppercase;
+}
+#nav .header-details address div {
+  justify-content: center;
+}
+#nav .header-details address div a {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: #000;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#nav .header-details address div a:hover {
+  color: #CDBD9B;
+}
+#nav .header-details address div a:nth-of-type(2) {
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#nav .btn {
+  display: flex;
+  padding: 0 5px 2px;
+  margin-right: 0;
+  margin: 5px auto;
+  max-width: 260px;
+  min-width: auto;
+  border-radius: 0;
+}
+#nav .btn span {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  letter-spacing: 0.1em;
+  background-color: #003875;
+  padding: 10px;
+  margin: auto;
+}
+#nav .btn span small {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: block;
+}
+#nav .btn i {
+  margin: auto;
+  font-size: 18px;
+  color: #003875;
+}
+#nav .btn:hover {
+  color: #fff;
+}
+#nav .pho span {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #231f20;
+}
+#nav .pho .phone {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 37px;
+  color: #003875;
+}
+#nav .pho .phone:hover {
+  color: #CDBD9B;
+}
+#nav .pho .phone:hover {
+  color: #CDBD9B;
+}
+#nav .pho .phone i {
+  align-self: center;
+}
+#nav .btn-alt {
+  background-color: #003875;
+  color: #000;
+}
+#nav .header-details i:before {
+  color: #003875;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#covid {
+  background-color: #f8d513;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 3.6px;
+  line-height: 24px;
+  padding: 3px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+/* ------------   Split Img ------------- */
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1150px;
+  margin: 100px auto;
+}
+.split article {
+  margin: 10px;
+  padding: 10px;
+  flex: 0 1 520px;
+}
+.split article p {
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.split .btn {
+  margin: 10px auto;
+}
+.split figure img {
+  position: relative;
+  box-shadow: 3px 4px 7px rgba(60, 60, 60, 0.35);
+}
+.split .no-shad img {
+  box-shadow: none;
+}
+.split.even figure {
+  order: -1;
+}
+
+/* -------------- Banner ----------------- */
+#banner-wrapper {
+  position: relative;
+  border-bottom: 1rem solid #CDBD9B;
+}
+
+#banner {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-around;
+}
+#banner #info-bar {
+  background-color: #3e8d8d;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 23px;
+  padding: 10px;
+}
+#banner #info-bar span {
+  margin: 0 10px;
+}
+#banner .flex-ed {
+  overflow: hidden;
+}
+#banner h1 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-size: 76px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 0;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  #banner h1 {
+    font-size: clamp(1rem, 11.7vw, 5rem);
+    line-height: 1.1;
+    color: #fff;
+  }
+}
+#banner h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  #banner h2 {
+    font-size: clamp(0.6rem, 8.2vw, 6.2rem);
+    line-height: 1.4;
+  }
+}
+#banner article {
+  padding: 50px 50px 30px;
+  z-index: 1;
+  flex: 1 1 40%;
+  background-color: #252C33;
+}
+#banner article #banner-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#banner article #banner-badges span {
+  margin: 0 20px;
+}
+#banner article ul li {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: clamp(1rem, 1.8vw, 3.5rem);
+  color: #fff;
+  margin: 20px 10px;
+  padding-left: 30px;
+}
+@media (max-width: 1000px) {
+  #banner article ul li {
+    font-size: clamp(0.6rem, 4.9vw, 6.2rem);
+    line-height: 1.6;
+    padding: 0 0 0 2rem;
+  }
+}
+#banner article ul li:before {
+  left: -12px;
+  top: 4px;
+  font-size: 24px;
+  color: #CDBD9B;
+}
+#banner article strong {
+  font: 600 25px/41px "Saol Display";
+  letter-spacing: 2.5px;
+}
+#banner figure {
+  position: relative;
+  display: flex;
+  flex: 1 1 60%;
+}
+#banner figure picture {
+  display: flex;
+  flex: 1;
+}
+#banner figure picture img {
+  margin: 0;
+  flex: 1;
+}
+#banner p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#banner .btn {
+  padding: 15px 70px;
+  margin: 30px auto;
+}
+#banner figcaption {
+  background-color: #fff;
+  font-family: "Saol Display";
+  letter-spacing: 2.2px;
+  font-weight: 400;
+  color: #000;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#banner figcaption a {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000;
+}
+@media (max-width: 1000px) {
+  #banner figcaption a {
+    font-size: clamp(0.3rem, 2.5vw, 6.3rem);
+    line-height: 1.3;
+    padding: 0;
+  }
+}
+#banner figcaption a:hover {
+  color: #003875;
+}
+
+#options {
+  margin: 0 0 80px;
+  background-color: #252C33;
+  padding: 3rem 1rem;
+}
+#options div {
+  padding: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+#options h2 {
+  font-family: "Saol Display";
+  font-weight: normal;
+  font-size: clamp(1rem, 3.5vw, 5rem);
+  color: #CDBD9B;
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  #options h2 {
+    font-size: clamp(0.5rem, 10.9vw, 4.1rem);
+    position: relative;
+  }
+  #options h2::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #CDBD9B;
+    width: 6rem;
+    bottom: -2.7rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+#options h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 5rem);
+  letter-spacing: 0.03em;
+  color: #fff;
+  line-height: 3;
+}
+@media (max-width: 1000px) {
+  #options h3 {
+    bottom: -3rem;
+    font-size: clamp(0.5rem, 8.8vw, 4.1rem);
+    line-height: 1.7;
+  }
+  #options h3::before {
+    content: "";
+    border: none;
+  }
+}
+
+#request {
+  background-color: #f0f0f0;
+  max-width: 1300px;
+  margin: -100px auto auto;
+}
+#request h2 {
+  font-weight: 700;
+  margin: 0;
+  padding: 15px 10px;
+  background-color: #505153;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Saol Display";
+}
+#request form {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: #f0f0f0;
+}
+#request form > div {
+  margin: 5px 15px;
+  flex: 0 1 380px;
+}
+#request form > div .flex-ed {
+  width: 100%;
+  justify-content: center;
+}
+#request form > div:nth-of-type(2) {
+  flex: 0 1 300px;
+  margin: 0 30px;
+}
+#request form input,
+#request form textarea {
+  border: none;
+  font-family: "Saol Display";
+  background-color: #fff;
+  height: 55px;
+  color: #000;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+#request form input {
+  margin: 5px auto;
+}
+#request form .input {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+}
+#request form .input:first-of-type {
+  margin-top: 10px;
+}
+#request form input[type=checkbox] {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#request form input[type=checkbox] + label {
+  font-size: 20px;
+  color: #000;
+  margin-left: 5px;
+  font-family: "Saol Display";
+}
+#request form .big-label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  font-family: "Saol Display";
+}
+#request form .btn {
+  background-color: #252C33;
+  font-weight: 700;
+  color: #000;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Saol Display";
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+#request form .btn:hover {
+  background-color: #003875;
+}
+#request form ::-moz-placeholder {
+  font-size: 16px;
+  top: 0;
+}
+#request form ::placeholder {
+  font-size: 16px;
+  top: 0;
+}
+#request form ::-webkit-input-placeholder {
+  color: #000;
+}
+#request form :-moz-placeholder {
+  color: #000;
+}
+#request form ::-moz-placeholder {
+  color: #000;
+}
+#request form :-ms-input-placeholder {
+  color: #000;
+}
+#request form textarea {
+  height: 130px;
+  padding: 15px;
+  padding-top: 3px;
+}
+
+#review-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1400px;
+  margin: 80px auto;
+  justify-content: space-around;
+}
+#review-section > * {
+  flex: 0 1 45%;
+}
+#review-section .review {
+  height: 437px;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+}
+#review-section .review:last-child:before {
+  width: 280px;
+  bottom: auto;
+  top: -7px;
+  background-color: #003875;
+}
+#review-section .review:last-child:after {
+  left: auto;
+  bottom: -7px;
+  right: 0px;
+  height: 100%;
+  width: 60%;
+  background-color: #003875;
+}
+#review-section .review:first-of-type p {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000;
+}
+@media (max-width: 1000px) {
+  #review-section .review:first-of-type p {
+    font-size: clamp(0.7rem, 4.9vw, 5.4rem);
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+#review-section .review p {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000;
+}
+@media (max-width: 1000px) {
+  #review-section .review p {
+    font-size: clamp(0.7rem, 4.9vw, 5.4rem);
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+#review-section .review star {
+  width: 100%;
+}
+#review-section .review > span {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+  #review-section .review > span {
+    font-size: clamp(0.7rem, 4.9vw, 5.4rem);
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+#review-section .review:before, #review-section .review:after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  bottom: -7px;
+  z-index: -1;
+  background-color: #CDBD9B;
+  width: 220px;
+  height: 150px;
+}
+#review-section .review:after {
+  left: auto;
+  top: auto;
+  bottom: 0;
+  right: -7px;
+  height: 100%;
+}
+
+#map-section {
+  background-color: #252C33;
+  padding: 4rem 1rem 6rem;
+}
+#map-section h2 {
+  font-family: "Saol Display";
+  font-weight: normal;
+  font-size: 53px;
+  color: #CDBD9B;
+}
+@media (max-width: 1000px) {
+  #map-section h2 {
+    font-size: clamp(1rem, 12vw, 4rem);
+  }
+}
+#map-section .flex-row {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+#map-section .flex-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#map-section .flex-row > div h3 {
+  font-family: "Saol Display";
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+@media (max-width: 1000px) {
+  #map-section .flex-row > div h3 {
+    font-size: clamp(1rem, 11vw, 4rem);
+  }
+}
+#map-section .flex-row > div figure iframe {
+  border-radius: 1rem;
+}
+#map-section .flex-row > div a {
+  font-family: "Saol Display";
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+#map-section .flex-row > div a:hover {
+  color: #CDBD9B;
+}
+@media (max-width: 1000px) {
+  #map-section .flex-row > div a {
+    font-size: clamp(1rem, 6vw, 4rem);
+  }
+}
+
+/* ------------- Ways ------------- */
+#ways .flex-ed {
+  flex-wrap: wrap;
+  max-width: 1320px;
+  margin: auto;
+}
+#ways .flex-ed .ways-section {
+  max-width: 600px;
+  margin: 40px 30px;
+  background-color: #151515;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+}
+#ways .flex-ed .ways-section:nth-of-type(2), #ways .flex-ed .ways-section:nth-of-type(3) {
+  background-color: #505153;
+}
+#ways .flex-ed .ways-section article {
+  padding: 25px 55px;
+}
+#ways .flex-ed .ways-section article p {
+  color: white;
+}
+#ways .flex-ed .ways-section article h2 {
+  color: white;
+  font-size: 40px;
+  font-family: "Saol Display";
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 34px;
+}
+#ways .flex-ed .bg:before, #ways .flex-ed .bg:after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: -1;
+  background-color: #799ea9;
+  width: 220px;
+  height: 150px;
+}
+#ways .flex-ed .bg:after {
+  left: auto;
+  top: auto;
+  bottom: -10px;
+  right: -10px;
+  height: 150px;
+}
+#ways .flex-ed .alt-bg:before, #ways .flex-ed .alt-bg:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  z-index: -1;
+  background-color: #799ea9;
+  width: 220px;
+  height: 150px;
+}
+#ways .flex-ed .alt-bg:after {
+  right: -10px;
+  top: -10px;
+  bottom: auto;
+  left: auto;
+  height: 150px;
+}
+#ways .flex-ed .yellow-box:before, #ways .flex-ed .yellow-box:after {
+  background-color: #f7e3b2;
+}
+#ways .flex-ed .ways-final {
+  display: flex;
+  background-color: #505153;
+  max-width: 1260px;
+  margin: 20px auto 80px;
+  position: relative;
+}
+#ways .flex-ed .ways-final article {
+  padding: 40px 50px;
+  text-align: left;
+}
+#ways .flex-ed .ways-final article p {
+  color: white;
+  max-width: 900px;
+}
+#ways .flex-ed .ways-final article h2 {
+  color: white;
+  font-size: 40px;
+  font-family: "Saol Display";
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 34px;
+}
+#ways .flex-ed .ways-final:before, #ways .flex-ed .ways-final:after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: -1;
+  background-color: #799ea9;
+  width: 220px;
+  height: 150px;
+}
+#ways .flex-ed .ways-final:after {
+  left: auto;
+  top: auto;
+  bottom: -10px;
+  right: -10px;
+  height: 150px;
+}
+
+/* ------------- Dentist ------------- */
+#dentist,
+#where-here {
+  padding: 50px 20px;
+  color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#dentist > .flex-ed,
+#where-here > .flex-ed {
+  margin: 30px auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+#dentist > .flex-ed article,
+#where-here > .flex-ed article {
+  text-align: left;
+}
+#dentist > .flex-ed article h2,
+#where-here > .flex-ed article h2 {
+  font-size: 60px;
+  text-align: left;
+  font-weight: 300;
+}
+#dentist > .flex-ed article p,
+#where-here > .flex-ed article p {
+  font-size: 22px;
+}
+#dentist > .flex-ed figure figcaption,
+#where-here > .flex-ed figure figcaption {
+  font-family: "Saol Display";
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+#dentist {
+  background-color: #CDBD9B;
+}
+#dentist figure {
+  flex: 0 1 30%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#dentist figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #252C33;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+#dentist article {
+  flex: 0 1 70%;
+  align-self: center;
+  padding: 10px 50px 10px 20px;
+}
+#dentist article h2 {
+  color: #000;
+  position: relative;
+}
+#dentist article p {
+  text-align: left;
+  color: #000;
+  line-height: 39px;
+  position: relative;
+}
+#dentist article .btn {
+  width: 260px;
+  min-width: auto;
+}
+#dentist article .btn:hover {
+  color: #fff;
+}
+
+#where-here {
+  background-color: #252C33;
+}
+#where-here figure {
+  flex: 1 1 70%;
+}
+#where-here article {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 62%;
+  padding: 0 10px;
+}
+#where-here article h2 {
+  color: #fff;
+}
+#where-here article p {
+  color: #fafafa;
+  line-height: 32px;
+}
+
+hr {
+  margin-top: 30px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 53, 95, 0.7019607843);
+  display: none;
+}
+
+/* ------------- Affil ------------- */
+#affil {
+  position: relative;
+  padding: 1rem 1rem 2.1rem;
+  letter-spacing: 2px;
+  font-size: 20px;
+  border-bottom: 0.6rem solid #CDBD9B;
+  background-color: #ffffff;
+  margin: 4rem 0;
+}
+
+#affil h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #2c343b;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 410px;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  #affil h4 {
+    font-size: clamp(0.6rem, 8.9vw, 2.1rem);
+    line-height: 1.2;
+  }
+}
+
+#affil h4:after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  border: 1px solid black;
+  top: 50%;
+  left: 23rem;
+}
+
+#affil h4:before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  border: 1px solid black;
+  top: 50%;
+  left: -7rem;
+}
+
+#affil div {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#affil div span {
+  margin: 10px auto;
+  padding: 0 5px;
+}
+
+/* ---------------- Where ---------------- */
+#where {
+  max-width: 1300px;
+  margin: 100px auto 50px;
+}
+
+#where .contain {
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 55px;
+  background-color: #151515;
+  margin: 10px auto 60px;
+  text-align: left;
+}
+
+#where .contain:before,
+#where .contain:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #799ea9;
+  width: 220px;
+  height: 150px;
+}
+
+#where .contain:before {
+  left: -10px;
+  top: -10px;
+}
+
+#where .contain:after {
+  right: -10px;
+  bottom: -10px;
+}
+
+#where article {
+  align-self: center;
+  padding: 0 10px;
+  margin-right: 30px;
+  flex: 0 1 685px;
+}
+
+#where article p {
+  line-height: 32px;
+  color: #fff;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  font-size: 25px;
+}
+
+#where article h2 {
+  font-size: 60px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+#where figure {
+  max-width: 540px;
+}
+
+.gmap iframe {
+  max-width: 100%;
+}
+
+.gmap {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+}
+
+.gmap.active iframe {
+  pointer-events: all;
+}
+
+.gmap iframe {
+  width: 610px;
+}
+
+/* ---------------- Footer ---------------- */
+/* --- Simple Form ----*/
+.simple {
+  max-width: 270px;
+  margin: auto;
+}
+
+.simple input,
+.simple textarea {
+  box-sizing: border-box !important;
+  border: 0;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  width: 245px;
+  height: 35px;
+  background-color: #fff;
+  color: #555;
+  font: 400 13px/40px Lato, sans-serif;
+}
+
+.simple textarea {
+  height: 85px !important;
+}
+
+.simple input:focus,
+.simple textarea:focus {
+  outline: 0;
+}
+
+footer .btn,
+.submit-btn {
+  min-width: auto;
+  width: 245px;
+  margin-top: 0;
+  color: #fff;
+  text-shadow: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.simple input:focus,
+.simple textarea:focus,
+button:focus {
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: #CDBD9B;
+}
+
+::-webkit-input-placeholder {
+  color: #555;
+  font: 400 13px/40px Lato, sans-serif;
+}
+
+:-moz-placeholder {
+  color: #555;
+  font: 400 13px/40px Lato, sans-serif;
+}
+
+::-moz-placeholder {
+  color: #555;
+  font: 400 13px/40px Lato, sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: #555;
+  font: 400 13px/40px Lato, sans-serif;
+}
+
+footer {
+  padding: 0 0;
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 0;
+}
+footer .simple {
+  max-width: 425px;
+  margin: 0;
+}
+footer .simple input, footer .simple textarea {
+  background-color: #F5F5F5;
+  width: 100%;
+}
+
+#footer-content {
+  max-width: 1400px;
+  background-color: #fff;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0;
+  gap: 8rem;
+}
+#footer-content .simple h3 {
+  font-family: "Saol Display";
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+@media (max-width: 1000px) {
+  #footer-content .simple h3 {
+    font-size: 45px;
+  }
+}
+#footer-content .simple .btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  #footer-content .simple .btn {
+    font-size: clamp(1rem, 9.1vw, 5.4rem);
+    line-height: 1.3;
+  }
+}
+#footer-content .started h2 {
+  font-family: "Saol Display";
+  font-weight: normal;
+  font-size: 64px;
+  letter-spacing: -0.01em;
+  color: #CDBD9B;
+}
+@media (max-width: 1000px) {
+  #footer-content .started h2 {
+    font-size: 45px;
+  }
+}
+#footer-content .started p {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: #000;
+}
+.contact-form .simple {
+  margin: auto;
+}
+
+.line {
+  display: inline-block;
+  width: 2px;
+  margin: auto;
+  height: 273px;
+  background-color: #000;
+}
+
+.hours {
+  color: #333;
+  font: 400 15px/34px Lato, sans-serif;
+  line-height: 2;
+  max-width: 260px;
+  margin: 10px auto;
+  text-align: left;
+  display: table;
+}
+.hours span {
+  font-size: 16px;
+  line-height: 1.4;
+  display: block;
+}
+.hours label {
+  width: 110px;
+  float: left;
+  text-align: left;
+  font-weight: 700;
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+
+.started {
+  flex: 0 1 605px;
+  padding: 0 20px 10px;
+  text-align: center;
+  align-self: center;
+  color: #fff;
+}
+
+footer h2 {
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.56);
+  font-weight: 300;
+  text-align: left;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  margin-top: -15px;
+  font-size: 64px;
+}
+
+footer h3,
+.office-details span {
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-family: "Saol Display";
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.office-details {
+  padding: 0 20px;
+  align-self: center;
+}
+
+.started p {
+  margin: auto;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+}
+
+#copyright {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  padding: 30px 0 50px;
+  text-align: center;
+  color: #fff;
+  background: #252C33;
+}
+@media (max-width: 1000px) {
+  #copyright {
+    font-size: clamp(0.6rem, 4.5vw, 5.4rem);
+    line-height: 1.5;
+  }
+}
+
+#copyright a {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+#copyright a:hover {
+  color: #003875;
+}
+@media (max-width: 1000px) {
+  #copyright a {
+    font-size: clamp(0.6rem, 4.5vw, 5.4rem);
+    line-height: 1;
+  }
+}
+
+#copyright a:hover {
+  color: #003875;
+}
+
+#copyright span > span:not(:first-of-type) {
+  margin: 0 10px;
+}
+
+/* END FOOTER */
+/* ---------------- New Patient Form ---------------- */
+#landing-page-form {
+  position: relative;
+  max-width: 850px;
+  padding: 0px 10px 10px;
+  margin: 20px auto;
+}
+#landing-page-form h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #252C33;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 400;
+  text-shadow: none;
+}
+#landing-page-form p {
+  max-width: 680px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+#landing-page-form .simple {
+  margin: auto;
+  display: table;
+  width: 100%;
+  max-width: 550px;
+}
+#landing-page-form .simple label {
+  display: none;
+}
+#landing-page-form .simple input {
+  height: 50px;
+}
+#landing-page-form .simple textarea {
+  height: 200px;
+  margin-bottom: 30px;
+  padding-top: 0;
+}
+#landing-page-form .simple input,
+#landing-page-form .simple textarea {
+  width: 450px;
+  border: 1px solid #000;
+  font-size: 18px;
+}
+#landing-page-form .simple input::-moz-placeholder, #landing-page-form .simple textarea::-moz-placeholder {
+  font-size: 18px;
+}
+#landing-page-form .simple input::placeholder,
+#landing-page-form .simple textarea::placeholder {
+  font-size: 18px;
+}
+#landing-page-form .btn {
+  min-width: 450px;
+}
+
+hr {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.74);
+  box-shadow: 5px 1px 1px rgba(14, 14, 15, 0.35);
+  margin-top: 30px;
+  display: none;
+}
+
+/* ---------------- Media Queries ---------------- */
+@media (max-width: 1340px) {
+  #ways .flex-ed .ways-section {
+    margin: 40px auto;
+  }
+}
+@media (max-width: 1300px) {
+  #ways .flex-ed .ways-final {
+    margin: 40px 30px;
+  }
+  #ways .flex-ed .ways-final article {
+    flex: 0 1 70%;
+    padding: 20px 30px;
+  }
+  #ways .flex-ed .ways-final figure {
+    height: 100%;
+    width: 260px;
+  }
+}
+@media (max-width: 1200px) {
+  #video-review {
+    flex-wrap: wrap;
+  }
+  #video-review > * {
+    flex: 100%;
+  }
+  #banner article {
+    margin: 0 auto 20px;
+    padding-top: 20px;
+  }
+  #banner .flex-ed {
+    display: block;
+  }
+  #banner-wrapper:before {
+    background-color: transparent;
+  }
+  #video-review #review {
+    height: auto !important;
+  }
+}
+@media (max-width: 1110px) {
+  h1 {
+    font-size: 50px;
+  }
+  h1 span {
+    font-size: 60px;
+  }
+  .started {
+    flex: 1 1;
+  }
+  .gmap a {
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 1030px) {
+  header address a {
+    font-size: 15px;
+  }
+  .phone {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  h1 span {
+    font-size: 55px;
+  }
+  footer {
+    margin-bottom: 42px !important;
+  }
+  footer section {
+    text-align: center;
+  }
+  #footer-content {
+    padding: 0;
+    justify-content: space-around;
+  }
+  #where .contain {
+    height: auto !important;
+  }
+  .started {
+    margin-top: 20px;
+  }
+  .gmap iframe {
+    max-width: 100%;
+  }
+  #video-review {
+    margin-bottom: 0;
+  }
+  #dentist > div,
+  #where-here > div {
+    display: block;
+    max-width: 800px;
+  }
+  #dentist .dr,
+  #where-here .dr {
+    margin-top: 30px;
+  }
+  #dentist figure,
+  #where-here figure {
+    flex: 1 1 100px;
+    align-self: flex-start;
+    height: 250px;
+  }
+  #dentist h2,
+  #where-here h2 {
+    text-align: left;
+  }
+  #dentist figure {
+    flex: 1 1 35%;
+  }
+  #dentist .dr:nth-of-type(1) figure,
+  #dentist .dr:nth-of-type(2) figure,
+  #dentist .dr:nth-of-type(3) figure {
+    background-position: center -10px;
+  }
+  #review {
+    margin: 100px 20px;
+  }
+}
+@media (min-width: 1000px) {
+  #mobile-btns {
+    display: none !important;
+  }
+}
+@media (max-width: 1000px) {
+  #nav .header-details {
+    display: none;
+  }
+  #landing-page-form .simple input,
+  #landing-page-form .simple textarea {
+    width: 350px;
+  }
+  #landing-page-form .btn {
+    min-width: 300px;
+  }
+  hr {
+    display: block;
+    max-width: 95%;
+  }
+  header #nav {
+    padding: 0;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header #nav #header-buttons {
+    display: none;
+  }
+  header #nav .logo {
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  header #mobile-btns .btn {
+    min-width: initial;
+  }
+  .fix-nav #header-buttons {
+    display: none !important;
+  }
+  header address {
+    display: none;
+  }
+  #banner {
+    background-color: #fff;
+    margin-top: 0;
+  }
+  #banner .flex-ed {
+    margin: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  #banner h1 {
+    text-align: center;
+  }
+  #banner h1:after {
+    right: 0;
+    margin: auto;
+  }
+  #banner article {
+    padding: 40px 10px;
+  }
+  #banner article div {
+    max-width: 500px;
+    margin: 10px auto 15px;
+  }
+  #banner figure img {
+    display: block;
+    width: 100%;
+  }
+  #banner figure figcaption {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+  }
+  #options {
+    padding: 40px 10px;
+    margin-bottom: 30px;
+  }
+  #options h3 {
+    margin-top: 20px;
+  }
+  #options h3 span {
+    display: block;
+  }
+  #options h3 span:nth-of-type(even) {
+    display: none;
+  }
+  #dentist > .flex-ed,
+  #where-here > .flex-ed {
+    padding: 0;
+  }
+  #dentist > .flex-ed article,
+  #where-here > .flex-ed article {
+    text-align: center;
+  }
+  #dentist > .flex-ed article h2,
+  #where-here > .flex-ed article h2 {
+    text-align: center;
+  }
+  #dentist > .flex-ed article p,
+  #where-here > .flex-ed article p {
+    text-align: center;
+  }
+  #map-section .container .flex-row {
+    flex-direction: column;
+  }
+  #map-section .container .flex-row div figure iframe {
+    width: initial;
+  }
+  .split {
+    margin: 20px auto;
+    display: block;
+  }
+  .split article {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+  .split article .btn {
+    float: none;
+    margin: auto;
+    display: table;
+  }
+  .split figure {
+    margin: 20px auto;
+  }
+  #review-section {
+    margin: 30px auto;
+  }
+  #review-section .review {
+    flex: 100%;
+    margin: 30px;
+    padding: 40px 15px;
+  }
+  #secondary {
+    padding: 15px 0;
+  }
+  #services {
+    order: 1;
+  }
+  #contact {
+    flex: 0 1 690px;
+  }
+  #services,
+  #footer-form {
+    flex: 1;
+  }
+  #options .callout-icon {
+    margin: auto;
+  }
+  #affil {
+    margin-top: 50px;
+  }
+  #affil h4 {
+    position: initial;
+    width: initial;
+  }
+  #affil h4::before, #affil h4:after {
+    display: none;
+  }
+  #options h2:after {
+    display: none;
+  }
+  footer {
+    margin-top: 0;
+    padding: 0;
+  }
+  footer #footer-content {
+    padding: 1rem 1.5rem;
+    background-color: #f5f5f5;
+  }
+  footer #footer-content > section {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    margin: 40px auto;
+  }
+  footer #footer-content > section form input,
+  footer #footer-content > section form textarea {
+    background-color: #e6e6e6;
+  }
+  #copyright {
+    background-color: #031e35;
+    color: #fff;
+    padding: 1rem 1.5rem;
+  }
+  .simple {
+    margin: 0;
+  }
+  .line {
+    margin: 20px 30px;
+  }
+  .line:nth-of-type(2) {
+    display: none;
+  }
+  .started {
+    flex: 1 0 100%;
+    padding: 40px 20px 20px !important;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .started p {
+    text-align: center;
+  }
+  .started h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 980px) {
+  #ways .flex-ed .ways-final article p {
+    margin-bottom: 0;
+  }
+  #ways .flex-ed .ways-final article {
+    padding: 10px 30px;
+  }
+  #banner-wrapper:before {
+    bottom: -260px;
+  }
+}
+@media (max-width: 860px) {
+  #ways .flex-ed .ways-final {
+    max-width: 600px;
+    margin: 60px auto;
+    display: block;
+  }
+  #ways .flex-ed .ways-final figure {
+    height: auto;
+    width: auto;
+  }
+  #ways .flex-ed .ways-final article {
+    padding: 20px 30px;
+    text-align: center;
+  }
+  #dentist,
+  #where-here {
+    padding: 20px;
+  }
+}
+@media (max-width: 740px) {
+  #banner figcaption span {
+    display: none;
+  }
+  #dentist h2 {
+    max-width: 500px;
+    margin: auto;
+  }
+  #dentist h2:before {
+    display: none;
+  }
+  #footer-content > * {
+    padding: 20px;
+    max-width: 320px;
+    margin: 20px auto;
+  }
+  #banner #info-bar span {
+    margin: 0;
+  }
+  #banner figure {
+    max-width: 100%;
+  }
+  .line {
+    display: none;
+  }
+  #where .contain {
+    display: block;
+    padding: 25px;
+  }
+  #where h2 {
+    text-align: center;
+  }
+  #where article {
+    margin: auto;
+  }
+  #review-section .review {
+    height: auto;
+  }
+  :is(#dentist, #where-here) h2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  :is(#dentist, #where-here) h2:after {
+    content: "";
+    width: 125px;
+    height: 2px;
+    background-color: #003875;
+    margin: 20px auto;
+  }
+  .gmap a {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  .gmap iframe {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  #dentist {
+    margin-bottom: 0;
+  }
+  #where-here {
+    margin-top: 0;
+  }
+  #dentist p,
+  #where-here p {
+    text-align: center;
+  }
+  #dentist h2 span,
+  #where-here h2 span {
+    text-align: center;
+  }
+  #dentist h2:first-of-type,
+  #where-here h2:first-of-type {
+    text-align: center;
+  }
+  #dentist .dr,
+  #where-here .dr {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #dentist figure {
+    flex: 0 1 300px;
+    height: 100%;
+    margin: 10px auto 20px;
+  }
+  #where-here figure {
+    display: none;
+  }
+  #dentist article,
+  #where-here article {
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+    order: -1;
+    padding: 10px;
+  }
+  #where article {
+    text-align: center;
+  }
+  #where article p {
+    -moz-text-align-last: center;
+         text-align-last: center;
+  }
+}
+@media (max-width: 640px) {
+  #ways .flex-ed .ways-section {
+    margin: 40px 20px;
+  }
+  #ways .flex-ed .ways-final {
+    margin: 40px 20px;
+  }
+}
+@media (max-width: 610px) {
+  #options .top-text {
+    color: #000;
+  }
+}
+@media (max-width: 590px) {
+  #banner h2 {
+    text-align: center;
+  }
+  h1 span {
+    margin: 10px;
+  }
+  #banner article {
+    margin-bottom: 0;
+  }
+  #banner article ul li {
+    margin: 15px 10px;
+  }
+  #banner article ul li:before {
+    left: -6px;
+    top: -2px;
+  }
+  #banner article div {
+    line-height: 1.1;
+  }
+  h2 {
+    margin-top: 20px;
+  }
+  .split figure {
+    padding: 0 10px;
+  }
+  .split article p {
+    text-align: center;
+    padding: 0 10px;
+  }
+  footer #contact {
+    padding: 20px 10px;
+  }
+  footer .flex-ed {
+    display: block;
+  }
+  .simple {
+    margin: auto;
+    padding: 30px 0;
+  }
+  .office-details {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .office-details {
+    padding: 0 10px;
+  }
+  #copyright em {
+    display: block;
+    visibility: hidden;
+  }
+}
+@media (max-width: 400px) {
+  #banner article div {
+    padding-top: 10px;
+  }
+  .split article .btn {
+    margin-bottom: 20px;
+  }
+  .started {
+    flex: 1 1 400px;
+  }
+  #dentist figure {
+    flex: 1 1 70%;
+  }
+}
+@media (max-width: 350px) {
+  #banner h1 {
+    line-height: 1;
+  }
+  .split article .btn {
+    padding: 5px 7px;
+  }
+}
+/* tntvideos */
+[data-player],
+[data-embed] {
+  position: relative;
+}
+
+[data-embed] .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+[data-player] .close,
+[data-embed] .close {
+  background-color: #00a5be;
+  color: #fff;
+  padding: 11px;
+  text-transform: uppercase;
+}
+
+[data-player] .close:hover,
+[data-embed] .close:hover {
+  background-color: #464646;
+  color: #fff;
+}
+
+[data-embed] .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+[data-embed] .close i:before {
+  transform: rotate(45deg);
+}
+
+/* Youtube lazyload styles */
+.youtube {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0;
+}
+
+.youtube[class*=elem-] {
+  width: 440px;
+}
+
+.youtube:before,
+.youtube:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.youtube:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+}
+
+.youtube:after {
+  font-size: 70px;
+  color: #fff;
+  font-family: "fontello";
+  font-weight: 400;
+  margin: 0;
+  font-style: normal;
+  content: "\e80e";
+}
+
+.youtube:hover:after {
+  color: #ff0000;
+}
+
+.youtube:hover:before {
+  background-color: #fff;
+}
+
+.youtube.active:before,
+.youtube.active:after {
+  display: none;
+}/*# sourceMappingURL=lp-wisdom-styles.css.map */
