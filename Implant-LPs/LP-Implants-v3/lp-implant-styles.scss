@@ -1,37 +1,17 @@
 /* ---------------- Normalize  ---------------- */ .progress, sub, sup { vertical-align: baseline; } .block, .elem-left, .elem-right, article, aside, details, figcaption, figure, footer, header, hr, main, menu, nav, section, summary { display: block; } hr, sub, sup { position: relative; } body, figure { margin: 0; } button, hr, input, select { overflow: visible; } [type="checkbox"], [type="radio"], legend { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; } html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 100%; } audio, canvas, progress, video { display: inline-block; } audio:not([controls]) { display: none; height: 0; } [hidden], template { display: none; } a { background-color: transparent; } a:active, a:hover { outline-width: 0; } abbr[title] { border-bottom: none; text-decoration: underline; -webkit-text-decoration: underline dotted; text-decoration: underline dotted; } b, strong { font-weight: 700; } dfn { font-style: italic; } h1 { font-size: 2em; margin: 0 0 0.67em; } mark { background-color: #ff0; color: #000; } small { font-size: 80%; } sub, sup { font-size: 60%; line-height: 0; } sub { bottom: -0.25em; } sup { top: -0.45em; } img { border-style: none; } svg:not(:root) { overflow: hidden; } code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; } hr { -webkit-box-sizing: content-box; box-sizing: content-box; height: 0; border: 0; } button, input, select, textarea { font: inherit; line-height: initial; margin: 0; } optgroup { font-weight: 700; } button, select { text-transform: none; } [type="button"], [type="reset"], [type="submit"], button { cursor: pointer; } [disabled] { cursor: default; } [type="reset"], [type="submit"], button, html [type="button"] { -webkit-appearance: button; border: 0; } button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; } button:-moz-focusring, input:-moz-focusring { outline: ButtonText dotted 1px; } fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; } legend { color: inherit; display: table; max-width: 100%; white-space: normal; } textarea { overflow: auto; } [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; } [type="search"] { -webkit-appearance: textfield; } [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; } *, ::before, ::after { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } .clearfix:before, .clearfix:after { display: table; content: " "; } .clearfix:after { clear: both; } address { font-style: normal !important; } img { max-width: 100%; display: block; margin: 0 auto; } .icon-gplus:before { margin-left: -1px !important; } .page_index main, .page_index > hr { display: none !important; } a, ::before, ::after, img, figure, article, li, #fixed-tabs, #header, #banner, h1, h2, h3, h4, h5, h6, .btn, .btn-alt, .btn:before, .btn-alt:before { -webkit-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; } i { display: inline; } *, ::before, ::after { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } [class*=" icon-"]:before, [class^="icon-"]:before { line-height: 1 !important; display: block !important; } .clearfix:before, .clearfix:after { display: table; content: " "; } .clearfix:after { clear: both; } .shadow { -webkit-box-shadow: 0 0 3px #000; box-shadow: 0 0 3px #000; } img { max-width: 100%; } a, .btn { cursor: pointer; } header { z-index: 99; } footer { z-index: 100; } /* ---------------- Animations  ---------------- */ .animated { -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-fill-mode: both; animation-fill-mode: both; } @-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } @-webkit-keyframes slideIn { from { -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); } to { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } } @keyframes slideIn { from { -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); } to { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
 /* ---------------- Global Styles  ---------------- */
 
-$primary: #FF7D2A; // star, icons, fixed, tabs, , btns
-$secondary: #073C5F; // #top-rated, #secondary, quiz-span footer
-$tertiary: #f0f0f0; // quiz/schedule-btns
-$quaternary: #359CD6; // safe-bar
-$review-background: #F2F2F2;// review-background, bottom-quiz-background
-// $btn: #F7CA4D;
-$font: "Work Sans", serif;
-$font2: "Work Sans", sans-serif;
+$primary: #8CA5D3; // star, icons, fixed, tabs, , btns
+$secondary: #172C41; // #top-rated, #secondary, quiz-span footer
+$tertiary: #ECEDEF; // quiz bkg, review-bkg
+$quaternary: #C0D8E9; // safe-bar
+$review-background: #C0D8E9;// review-background, bottom-quiz-background
+$quiz-background: #ECEDEF;
+$font: "Montserrat";
+$font2: "Montserrat";
 $text: #231f20;
 $btn-text: #fff;
 $alt-text: #fff;
-$nav-phone-font: normal 35px/37px $font2;
-$nav-address-font: normal 18px/22px $font2;
-$safe-bar-font: normal 40px/95px $font2;
-$nav-req-btn: bold 18px/36px $font2;
-$banner-bar-font: normal 40px/95px $font2;
-
-$quiz-btns: bold 20px/29px $font2;
-$quiz-h2: normal 30px/30px $font2;
-
-$top-rated-h2-font: bold 50px/50px $font;
-$rated-list-font: normal 28px/34px $font;
-$review-font: normal 32px/40px $font2;
-
-$h2-sections: bold 50px/60px $font; //implants make, clearly choice
-$p-sections: normal 22px/30px $font2; // implants make, coice
-$footer-h2: normal 30px/25px $font2;
-
-$nav-mobile-btn-phone: normal clamp(0.5rem, 5.2vw, 25px) / 28px "Spartan";
-$nav-mobile-btn-req: 600 clamp(0.5rem, 3.6vw, 18px) / 17px "Spartan";
-
 @mixin header-phone {
     font-family: $font2;
     font-weight: normal;
@@ -115,12 +95,13 @@ $nav-mobile-btn-req: 600 clamp(0.5rem, 3.6vw, 18px) / 17px "Spartan";
 // }
 @mixin banner-h1 {
     font-family: $font;
-    font-weight: 600;
-    font-size: 4rem;
-    
+    font-weight: 300;
+    font-size: clamp(1rem, 3.6vw, 5rem);
+    text-transform: uppercase;
+    color: $secondary;
     
     @media (max-width: 1000px) {
-        font-size: clamp(0.6rem, 8vw, 6.2rem);
+        font-size: clamp(1rem, 3.1vw, 5rem);
         line-height: 1.4;
     
     }
@@ -133,7 +114,7 @@ $nav-mobile-btn-req: 600 clamp(0.5rem, 3.6vw, 18px) / 17px "Spartan";
     
     @media (max-width: 1000px) {
        
-        font-size: clamp(0.5rem, 8vw, 7.5rem);
+        font-size: clamp(0.5rem, 5.7vw, 7.5rem);
     }
 }
 
@@ -157,7 +138,7 @@ letter-spacing: 0.05em;
 @mixin banner-bottom-bar {
     font-family: $font2;
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 40px;
     
     span {
         font-weight: bold;
@@ -169,7 +150,7 @@ letter-spacing: 0.05em;
 }
 @mixin rated-h3-small {
     font-family: $font2;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     letter-spacing: 0.1em;
     
@@ -182,11 +163,12 @@ letter-spacing: 0.05em;
 
 @mixin rated-h3 {
     font-family: $font;
-    font-weight: 600;
-font-size: 50px;
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;    
     color: #fff;
     @media (max-width: 1000px) {
-        font-size: clamp(0.9rem, 7.5vw, 9.3rem);
+        font-size: clamp(0.9rem, 6.7vw, 9.3rem);
     }
 }
 
@@ -198,21 +180,22 @@ font-size: 28px;
         color: $primary;
     }
     @media (max-width: 1000px) {
-        font-size: clamp(0.5rem, 5.2vw, 4.1rem);
+        font-size: clamp(0.5rem, 5.1vw, 4.1rem);
     }
 }
 
 @mixin rated-figcaption {
     font-family: $font;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
     letter-spacing: 0.1em;
+    
     color: $text;
     &:hover {
         color: $primary;
     }
     @media (max-width: 1000px) {
-        font-size: clamp(0.9rem, 4.9vw, 9.3rem);
+        font-size: clamp(0.4rem, 3.5vw, 9.3rem);
         .mobile-hide {
             display: none;
         }
@@ -237,7 +220,7 @@ font-size: 28px;
     font-family: $font2;
     font-weight: normal;
     font-size: 30px;
-    
+        color: #000;
         @media (max-width: 1000px) {
         font-size: clamp(1rem, 7.2vw, 6.4rem);
         line-height: 1.3;
@@ -247,7 +230,7 @@ font-size: 28px;
 @mixin review-p {
     font-family: $font2;
     font-weight: normal;
-    font-size: 30.6px;
+    font-size: 24px;
     line-height: 1.3;
         @media (max-width: 1000px) {
         font-size:clamp(1rem, 6.7vw, 6.4rem);
@@ -256,24 +239,52 @@ font-size: 28px;
     }
 }
 @mixin review-author {
-    font-family: $font2;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
     letter-spacing: 0.1em;
-        text-transform: uppercase;
+    
+            @media (max-width: 1000px) {
+                font-size:clamp(1rem, 5.9vw, 6.4rem);
+                font-weight: 600;
+            }
+   
 }
 
-
+@mixin option-h2 {
+    font-family: $font;
+    color: $secondary;
+    font-weight: 300;
+    font-size: 60px;
+text-transform: uppercase;
+@media (max-width: 1000px) {
+    font-size:clamp(1rem, 10vw, 1.9rem);
+}
+}
+@mixin option-figcaption {
+    font-weight: normal;
+    font-size: 20px;
+    
+}
 @mixin general-h2 {
     font-family: $font;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 50px;
-        color: $text;
+    text-transform: uppercase;
+    color: $secondary;    
     @media (max-width: 1000px) {
-        font-size: clamp(0.9rem, 8.9vw, 9.3rem);
+        font-size: clamp(0.9rem, 7.5vw, 2.3rem);
     }
 }
-
+@mixin clear-h2 {
+    font-family: $font;
+    font-weight: 300;
+    font-size: clamp(0.9rem, 11.5vw, 3.9rem);
+    text-transform: uppercase;
+    color: $secondary;    
+    @media (max-width: 1000px) {
+        font-size: clamp(0.9rem, 7.5vw, 2.3rem);
+    }
+}
 @mixin general-p {
     font-family: $font2;
 
@@ -281,7 +292,7 @@ font-size: 28px;
     font-size: 22px;
     line-height: 1.5;
     @media (max-width: 1000px) {
-        font-size: clamp(1rem, 5vw, 5.4rem);
+        font-size: clamp(0.9rem, 5.3vw, 5.4rem);
         line-height: 1.4;
     }
 }
@@ -326,7 +337,7 @@ font-size: 35px;
 
 
     @media (max-width: 1000px) {
-        font-size: clamp(0.7rem, 7vw, 5.4rem);
+        font-size: clamp(0.7rem, 5.4vw, 5.4rem);
         line-height: 1.4;
     }
 }
@@ -338,7 +349,7 @@ letter-spacing: 0.05em;
 
 
     @media (max-width: 1000px) {
-        font-size: clamp(0.4rem, 5vw, 5.4rem);
+        font-size: clamp(0.4rem, 4.5vw, 5.4rem);
         line-height: 1.4;
     }
 }
@@ -381,7 +392,7 @@ background-color: $primary;
 
 @mixin footer-phone-number {
     font-family: $font2;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 40px;
     
 
@@ -412,7 +423,11 @@ font-size: 20px;
     font-family: $font2;
     font-weight: normal;
     font-size: 18px;
-    
+   
+    @media (max-width: 1000px) {
+        font-size: clamp(0.9rem, 3.6vw, 2rem);
+
+    }
 }
 
 .flex-ed,
@@ -741,7 +756,6 @@ header {
                 span {
                     @include mobile-header-req-span();
                     width: 100%;
-                    font-size: 28px;
                 }
             }
             .phone,
@@ -756,9 +770,8 @@ header {
             }
             .phone {
                 @include mobile-header-phone();
-               
+               padding: 10px;
                 color: #fff;
-                font-size: 20px;
                 line-height: 1.3;
                 margin-bottom: 0;
                 span {
@@ -886,7 +899,6 @@ header {
     }
     h1 {
         @include banner-h1();
-        color: #000;
         margin: 30px auto;
         small {
             font-size: 32px;
@@ -994,7 +1006,7 @@ header {
     padding: 2rem 0;
     h3 {
         @include banner-bottom-bar();
-        color: #fff;
+        color: #000;
         margin: 0;
     }
 }
@@ -1094,9 +1106,9 @@ header {
         }
 
         article  {
-            background-color: $review-background;
+            background-color: $tertiary;
             align-items: flex-start;
-            padding: 4rem 6rem 2rem 6rem;
+            padding: 4rem 6rem 4rem 6rem;
         }
         author {
             @include review-author();
@@ -1110,6 +1122,11 @@ header {
             img {
                 padding: 0;
             }
+            star {
+                &:after {
+                    color: $primary;
+                }
+            }
         }
         > div {
            
@@ -1120,13 +1137,12 @@ header {
         p {
             @include review-p();
             position: relative;
-            padding-left: 1rem;
             margin: 10px auto;
             &:after {
                 content: "\e838";
                 position: absolute;
                 right: 0px;
-                top: -64%;
+                top: -93%;
                 font-family: fontello;
                 color: $primary;
                 font-size: 270px;
@@ -1226,10 +1242,9 @@ header {
                 text-align: center;
             }
             .caption2 {
-                font: 600 normal 18px/1 $font2;
+                @include review-author();
                 text-transform: uppercase;
                 margin: 30px 0 10px;
-                letter-spacing: 1.95px;
                 text-align: center;
             }
         }
@@ -1239,7 +1254,7 @@ header {
 /* 2nd Quiz Section */
 #quiz {
     padding: 75px 10px;
-    background: $review-background;
+    background: $quiz-background;
     .quiz {
         .flex-ed {
             max-width: 1300px;
@@ -1353,6 +1368,7 @@ header {
             margin-bottom: 20px;
             margin-top: 0;
             color: #88c6ff;
+          
         }
         &:hover h3 {
             color: $secondary;
@@ -1414,8 +1430,8 @@ header {
         flex-wrap: wrap;
     }
     h2 {
-        font: bold 60px/66px $font;
         margin-bottom: 25px;
+        @include option-h2();
     }
     .col {
         background-color: transparent;
@@ -1427,6 +1443,9 @@ header {
             font-family: $font2;
             font-weight: normal;
             margin: 0 0 25px;
+        }
+        p {
+            @include option-figcaption();
         }
         .portrait {
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
@@ -1484,7 +1503,7 @@ header {
         flex: 0 0 255px;
         &:hover {
             star:after {
-                color: $secondary;
+                color: $primary;
             }
         }
     }
@@ -1497,7 +1516,7 @@ header {
         font-family: $font;
         font-size: 28px;
         star:after {
-            color: #FEBB21;
+            color:$primary;
         }
     }
 }
@@ -1622,7 +1641,17 @@ footer {
         display: block;
     }
 }
-
+#best-choice {
+    article {
+        h2 {
+            @include clear-h2();
+            padding: 0 5rem;
+        }
+        p {
+            font-size: 23px
+        }
+    }
+}
 #services {
     order: -1;
  
@@ -1704,17 +1733,24 @@ footer {
     text-align: center;
     padding: 10px 0 60px;
     span {
-        padding: 0 5px;
+        padding: 0 1rem;
     }
-    a {
-        margin: auto;
-        color: $primary;
-        &:hover {
-            color: #fff;
+    #copyDate {
+        padding: 0;
+    }
+    .links {
+        display: inline;
+        a {
+            margin: auto;
+            color: $primary;
+            &:hover {
+                color: #fff;
+            }
+         
         }
-        &:last-of-type {
-            color: #fff;
-        }
+    }
+    >a:last-of-type {
+        color: #fff;
     }
 }
 
@@ -1973,6 +2009,31 @@ hr {
     }
 }
 @media (max-width: 1000px) {
+    .btn {
+        min-width: initial;
+    }
+    #banner {
+        flex-direction: column;
+        article {
+            margin: 0;
+            padding: 1.5rem .5rem 2rem;
+            h1 {
+                margin: 1rem 0;
+            }
+            .quiz {
+                padding: 0 1rem;
+                .flex-ed {
+                    display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+                }
+                .btn {
+                    padding: 0.5rem 1.5rem 0.4rem;
+                }
+            }
+        }
+   
+    }
     .flex-row {
         flex-direction: column;
     }
@@ -1981,7 +2042,7 @@ hr {
     }
 
     #bar {
-        padding: 1rem 1rem;
+        padding: .5rem 1rem;
     }
 
     #reviews {
@@ -1995,20 +2056,49 @@ hr {
         flex-wrap: wrap;
     }
     #rated {
+        margin: 0;
+        padding: 5rem 1.5rem 5rem;
         article {
-            padding: 3rem 1.5rem 3rem 2rem;
+            padding: 5rem 1.5rem 3rem 2rem;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap:3rem;
             h3 {
                 margin: 0;
             }
+            ul {
+                li {
+                    padding-left: 2rem;
+                }
+            }
+            
         }
-    }
-    #rated {
-        padding: 0rem 2rem 4rem;
         .review-container {
             display: none;
+        }
+        figure {
+            .caption {
+              opacity: 1;
+            }
+        }
+    }
+    #mobile-reviews {
+        background-color: $primary;
+        padding: 5rem 1.5rem;
+        .review-container {
+            .comment {
+                padding: 0 2rem 2rem;
+            }
+        }
+    }
+    #options {
+        padding: 0.5rem 1.5rem;
+    }
+    .split {
+        article {
+            h2 {
+
+            }
         }
     }
     #google {
@@ -2076,15 +2166,11 @@ hr {
     #banner {
         background: none;
       
-        article {
-            min-width: 450px;
-            padding: 40px 20px 50px;
-        }
+
         .flex-ed {
             display: block;
         }
         article {
-            margin: 10px auto 20px;
             padding-top: 20px;
         }
         figure {
@@ -2093,6 +2179,7 @@ hr {
     }
     .split {
         flex-direction: column;
+        padding: 0 1.5rem 5rem;
     }
     .split article {
         max-width: 100%;
@@ -2127,11 +2214,38 @@ hr {
     #secondary a {
         flex: 0 0 255px;
     }
+    #best-choice {
+       padding: 2rem 1rem 4rem;
+        article {
+          padding: 0;
+            h2 {
+                padding: 0 0 1.5rem;
+            }
+            p {
+                font-size: clamp(0.9rem, 4.5vw, 5.4rem);
 
-    #quiz .quiz article {
-        padding: 0.3rem 1rem 1rem;
-        display: flex;
-        flex-direction: column;
+                padding: 0 .5rem;
+            }
+            .btn {
+                font-size: clamp(0.6rem, 3.7vw, 5.4rem);
+            }
+           
+        }
+        figure {
+            padding: 0 .5rem;
+        }
+    }
+    #quiz .quiz {
+        .flex-ed {
+            display: flex;
+            flex-direction: column;
+        }
+        article {
+            padding: 0.3rem 0 1rem;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
     }
     footer .flex-ed {
         flex-wrap: wrap;
@@ -2141,6 +2255,7 @@ hr {
         .phone {
             font-size: 32px;
         }
+      
     }
     #services {
         order: -1;
@@ -2165,7 +2280,15 @@ hr {
     }
     .copy {
         margin-top: 0;
+        padding: 3rem 1.5rem 4rem;
+        .links {
+            display: block;
+        }
+        .mobile-hide {
+            display: none;
+        }
     }
+    
     #quiz .quiz .btn {
         padding: 0.7rem 1rem 0.7rem;
     }
@@ -2256,10 +2379,7 @@ hr {
     #nav .logo {
         max-width: 90%;
     }
-    #banner h1 {
-     
-        margin-bottom: 3rem;
-    }
+
     h1 span {
        
         margin: 10px;
@@ -2282,7 +2402,6 @@ hr {
    
  
     #banner article {
-        min-width: 300px;
         margin-top: 0;
     }
     #banner article div {
@@ -2321,14 +2440,12 @@ hr {
     .even {
         flex-direction: column-reverse;
         figure {
-            padding: 0 1.4rem;
         }
     }
     .odd {
         flex-direction: column;
     }
     .split {
-        padding: 0 1.3rem 3rem;
         flex: 1;
         article {
             flex: 1;
@@ -2347,9 +2464,7 @@ hr {
             padding: 1rem 1.6rem;
         }
     }
-    .copy {
-        padding: 40px 10px;
-    }
+
     #map {
         display: none;
     }
@@ -2369,7 +2484,6 @@ hr {
    
     }
     .btn {
-        min-width: auto;
         max-width: 100%;
     }
     #banner .quiz h2 {
@@ -2379,9 +2493,7 @@ hr {
     #banner .quiz article {
         padding: 15px;
     }
-    #banner .quiz .btn {
-        padding: 5px 25px;
-    }
+
 
     #quiz article {
         padding: 20px 10px;
@@ -2389,11 +2501,7 @@ hr {
 }
 
 @media (max-width: 400px) {
-    #banner h1 {
-     
-        margin-bottom: 10px;
-        margin-top: 30px;
-    }
+
     #banner article div {
       
         padding-top: 10px;
@@ -2437,11 +2545,7 @@ hr {
         padding: 10px 20px;
         font-size: 18px;
     }
-  
-    #banner article {
-        min-width: 250px;
-    }
-    
+ 
     footer article {
         margin: 20px;
     }

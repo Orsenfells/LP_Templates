@@ -40,6 +40,9 @@ $text5:#201D1E; // li-why
 #fixed-tabs a:nth-of-type(even) {
     background-color: darken($secondary, 8%);
 }
+.desktop-hide {
+    display: none !important;
+}
 @media (min-width: 1031px) {
     #fixed-tabs {
         display: none;
@@ -139,7 +142,7 @@ $text5:#201D1E; // li-why
 @mixin banner-h1 {
     font-family: $font2;
     font-weight: bold;
-    font-size: 60px;
+    font-size:clamp(1rem, 3.5vw, 4rem);
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #2f2f2e;
@@ -163,8 +166,8 @@ $text5:#201D1E; // li-why
 @mixin banner-p {
     font-family: $font2;
     font-weight: normal;
-    font-size: clamp(0.6rem, 1.2vw, 5.2rem);
-    padding: 0 1.5rem;
+    font-size: clamp(0.6rem, 1.3vw, 5.2rem);
+    ;
     @media (max-width: 1000px) {
         font-size: clamp(0.6rem, 4.4vw, 6.2rem);
         line-height: 1.6;
@@ -248,7 +251,7 @@ $text5:#201D1E; // li-why
 @mixin why-h2 {
     font-family: $font;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 36px;
     color: $text3;
     @media (max-width: 1000px) {
         font-size: clamp(0.9rem, 8.9vw, 9.3rem);
@@ -308,7 +311,7 @@ $text5:#201D1E; // li-why
     color: $text2;
     line-height: 1.4;
     @media (max-width: 1000px) {
-        font-size: clamp(0.7rem, 4.7vw, 5.4rem);
+        font-size: clamp(0.7rem, 4.6vw, 5.4rem);
         line-height: 1.4;
         text-align: left;
     }
@@ -331,7 +334,7 @@ $text5:#201D1E; // li-why
     
     color: $text;
     @media (max-width: 1000px) {
-        font-size: clamp(0.7rem, 4.9vw, 5.4rem);
+        font-size: clamp(0.7rem, 6vw, 5.4rem);
         line-height: 1.4;
 
     }
@@ -346,6 +349,7 @@ $text5:#201D1E; // li-why
         font-size: clamp(0.7rem, 3.9vw, 5.4rem);
         line-height: 1.4;
         text-align: left;
+        font-weight: bold;
     }
 }
 
@@ -445,7 +449,7 @@ $text5:#201D1E; // li-why
     font-size: 20px;
     color: #000;
     @media (max-width: 1000px) {
-        font-size: clamp(0.6rem, 3.9vw, 5.4rem);
+        font-size:clamp(0.6rem, 4.7vw, 5.4rem);
 
         line-height: 1.5;
     }
@@ -460,7 +464,7 @@ $text5:#201D1E; // li-why
         color: $primary;
     }
     @media (max-width: 1000px) {
-        font-size: clamp(0.6rem, 6.5vw, 5.4rem);
+        font-size: clamp(0.6rem, 5.2vw, 5.4rem);
         line-height: 1;
     }
 }
@@ -846,7 +850,6 @@ header {
     }
     p {
         @include banner-p();
-       padding: 0px 3rem;
     }
     .btn {
         padding: 15px 70px;
@@ -939,8 +942,9 @@ header {
             padding-bottom: 50px;
             padding-top: 0;
             background-color: #fff;
+            gap: 1rem;
             > div {
-                margin: 5px 15px;
+                margin: 5px 0;
                 flex: 0 1 380px;
                 .flex-ed {
                     width: 100%;
@@ -948,7 +952,7 @@ header {
                 }
                 &:nth-of-type(2) {
                     flex: 0 1 300px;
-                    margin: 0 30px;
+                    margin: 0 0;
                 }
             }
             input,
@@ -1044,7 +1048,7 @@ header {
     .review {
       align-self: stretch;
         background-color: #f0f0f0;
-       padding: 3rem 2.5rem;
+       padding: 2.8rem 3.5rem 1.9rem;
        display: flex;
        flex-direction: column;
        .review-stamp {
@@ -1219,6 +1223,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     flex: 1 0 50%;
+    gap: 1rem;
     img {
         flex: 1;
         margin: 0;
@@ -1880,6 +1885,9 @@ hr {
     }
 }
 @media (max-width: 1000px) {
+    .desktop-hide {
+        display: initial !important;
+    }
     .btn {
         min-width: initial;
     }
@@ -1937,13 +1945,18 @@ hr {
         margin: 4rem 1.5rem;
         border: 1px solid $primary;
         background: transparent;
+        padding: 1rem 1.5rem 0rem;
         box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+        >div {
+            padding: 0;
+        }
         #request-badge {
             position: relative;
             display: none;
         }
         #mid-form {
             background: transparent;
+            gap: 0;
             input,
             textarea {
                 background-color: #f5f5f5;
@@ -2235,7 +2248,7 @@ hr {
 @media (max-width: 740px) {
     #request > div form > div:nth-of-type(2) {
         flex: auto;
-        max-width: 91%;
+        max-width: 100%;
         margin: 0;
         .btn {
         }

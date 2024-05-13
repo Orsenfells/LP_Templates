@@ -333,11 +333,11 @@ star:after {
 }
 
 #fixed-tabs a:nth-of-type(odd) {
-  background-color: #dd5600;
+  background-color: #557abe;
 }
 
 #fixed-tabs a:nth-of-type(even) {
-  background-color: #042439;
+  background-color: #0c1823;
 }
 
 @media (min-width: 1031px) {
@@ -367,23 +367,23 @@ body {
   background-color: #fff;
   text-align: center;
   color: #231f20;
-  font: 400 18px/26px "Work Sans", sans-serif;
+  font: 400 18px/26px "Montserrat";
 }
 
 p {
   color: #231f20;
-  font: 400 22px/26px "Work Sans", sans-serif;
+  font: 400 22px/26px "Montserrat";
 }
 
 a {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 
 a:hover {
-  color: #073C5F;
+  color: #172C41;
 }
 
 h1,
@@ -391,19 +391,19 @@ h2 h3,
 h4,
 h5,
 h6 {
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   text-align: center;
 }
 
 h1 {
   margin: 50px auto;
   color: #000;
-  font: normal 70px/1.3 "Work Sans", serif;
+  font: normal 70px/1.3 "Montserrat";
   letter-spacing: 1.1px;
 }
 
 h1 span {
-  font: 500 83px/1 "Work Sans", sans-serif;
+  font: 500 83px/1 "Montserrat";
   color: #fff;
   display: block;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
@@ -411,15 +411,15 @@ h1 span {
 }
 
 h2 {
-  font: normal 50px/1.2 "Work Sans", serif;
+  font: normal 50px/1.2 "Montserrat";
   color: #000;
   letter-spacing: normal;
   margin: 10px 0;
 }
 
 h3 {
-  font: 600 30px/1 "Work Sans", sans-serif;
-  color: #073C5F;
+  font: 600 30px/1 "Montserrat";
+  color: #172C41;
   margin: 20px auto 0;
   letter-spacing: 0.15px;
 }
@@ -444,7 +444,7 @@ main ul li:before {
   position: absolute;
   left: 0;
   top: 0;
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 
 .flex-row,
@@ -466,9 +466,9 @@ main ul li:before {
   min-width: 300px;
   text-align: center;
   color: #fff;
-  background-color: #FF7D2A;
+  background-color: #8CA5D3;
   border-radius: 35px;
-  font: bold 20px/1.1 "Work Sans", sans-serif;
+  font: bold 20px/1.1 "Montserrat";
   text-transform: uppercase;
   letter-spacing: 1.8px;
 }
@@ -480,7 +480,7 @@ main ul li:before {
 }
 .btn:hover,
 .btn-alt:hover {
-  background-color: #073C5F;
+  background-color: #172C41;
   color: #fff;
 }
 
@@ -511,17 +511,17 @@ header address {
   padding: 0 8px;
 }
 header .address {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 18px;
   display: flex;
   color: #000;
 }
 header .address:hover {
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 header .address i:before {
-  color: #FF7D2A;
+  color: #8CA5D3;
   font-size: 22px;
   margin-left: -10px;
   margin-right: 15px;
@@ -538,7 +538,7 @@ header #nav #header-details {
   gap: 0rem;
 }
 header #nav .btn {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   color: #fff;
   font-weight: bold;
   font-size: 18px;
@@ -553,7 +553,7 @@ header #nav .btn {
 }
 header #nav .btn span {
   display: block;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: 700;
   letter-spacing: 1.5px;
   font-size: 26px;
@@ -570,7 +570,7 @@ header #nav .btn:hover {
   color: #fff;
 }
 header #nav .phone {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 35px;
   margin-bottom: 15px;
@@ -578,7 +578,7 @@ header #nav .phone {
   display: flex;
 }
 header #nav .phone:hover {
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 header #nav .phone span {
   display: block;
@@ -586,14 +586,14 @@ header #nav .phone span {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
 }
 header #nav .phone i {
   display: flex;
   align-items: center;
 }
 header #nav .phone i:before {
-  color: #FF7D2A;
+  color: #8CA5D3;
   font-size: 22px;
   margin-left: 0px;
   margin-right: 15px;
@@ -607,7 +607,7 @@ header #nav #mobile-btns > * {
   height: 64px;
 }
 header #nav #mobile-btns .btn {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: clamp(0.7rem, 3.9vw, 1.3rem);
   letter-spacing: 0.03em;
@@ -621,12 +621,11 @@ header #nav #mobile-btns .btn {
   text-transform: uppercase;
 }
 header #nav #mobile-btns .btn span {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-size: clamp(1rem, 6.4vw, 28px);
   font-weight: 600;
   letter-spacing: 0.03em;
   width: 100%;
-  font-size: 28px;
 }
 header #nav #mobile-btns .phone,
 header #nav #mobile-btns .btn {
@@ -640,22 +639,22 @@ header #nav #mobile-btns .btn span {
   width: 100%;
 }
 header #nav #mobile-btns .phone {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 21px;
   font-size: clamp(1rem, 5.1vw, 1.9rem);
   line-height: 1;
   background-color: #073c5f;
+  padding: 10px;
   color: #fff;
-  font-size: 20px;
   line-height: 1.3;
   margin-bottom: 0;
 }
 header #nav #mobile-btns .phone:hover {
-  background-color: #073C5F;
+  background-color: #172C41;
 }
 header #nav #mobile-btns .phone span {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-size: clamp(0.6rem, 4.4vw, 17.1px);
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -669,7 +668,7 @@ header #nav #mobile-btns #mobile-special .container {
   padding: 5px;
 }
 header #nav #mobile-btns #mobile-special .container h4 {
-  color: #f0f0f0;
+  color: #ECEDEF;
   font-size: 22px;
   margin: 0;
 }
@@ -713,18 +712,19 @@ header #nav #mobile-btns #mobile-special .container small {
   flex: 1 0 600px;
 }
 .split article h2 {
-  font-family: "Work Sans", serif;
-  font-weight: 600;
+  font-family: "Montserrat";
+  font-weight: 300;
   font-size: 50px;
-  color: #231f20;
+  text-transform: uppercase;
+  color: #172C41;
 }
 @media (max-width: 1000px) {
   .split article h2 {
-    font-size: clamp(0.9rem, 8.9vw, 9.3rem);
+    font-size: clamp(0.9rem, 7.5vw, 2.3rem);
   }
 }
 .split article p {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 22px;
   line-height: 1.5;
@@ -735,12 +735,12 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 @media (max-width: 1000px) {
   .split article p {
-    font-size: clamp(1rem, 5vw, 5.4rem);
+    font-size: clamp(0.9rem, 5.3vw, 5.4rem);
     line-height: 1.4;
   }
 }
 .split .btn {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   color: #fff;
   font-weight: 600;
   font-size: 20;
@@ -754,7 +754,7 @@ header #nav #mobile-btns #mobile-special .container small {
   }
 }
 .split figure figcaption {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -792,15 +792,16 @@ header #nav #mobile-btns #mobile-special .container small {
   flex: 1 0 50%;
 }
 #banner h1 {
-  font-family: "Work Sans", serif;
-  font-weight: 600;
-  font-size: 4rem;
-  color: #000;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: clamp(1rem, 3.6vw, 5rem);
+  text-transform: uppercase;
+  color: #172C41;
   margin: 30px auto;
 }
 @media (max-width: 1000px) {
   #banner h1 {
-    font-size: clamp(0.6rem, 8vw, 6.2rem);
+    font-size: clamp(1rem, 3.1vw, 5rem);
     line-height: 1.4;
   }
 }
@@ -819,13 +820,13 @@ header #nav #mobile-btns #mobile-special .container small {
   gap: 25px;
 }
 #banner .quiz h2 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 30px;
 }
 @media (max-width: 1000px) {
   #banner .quiz h2 {
-    font-size: clamp(0.5rem, 8vw, 7.5rem);
+    font-size: clamp(0.5rem, 5.7vw, 7.5rem);
   }
 }
 @media (max-width: 1000px) {
@@ -835,7 +836,7 @@ header #nav #mobile-btns #mobile-special .container small {
   }
 }
 #banner .quiz p.note {
-  font: normal 18px/1 "Work Sans", serif;
+  font: normal 18px/1 "Montserrat";
   color: grey;
   text-transform: uppercase;
 }
@@ -845,7 +846,7 @@ header #nav #mobile-btns #mobile-special .container small {
   padding: 0.3rem 5rem 1rem;
 }
 #banner .quiz .btn {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 0.05em;
@@ -876,10 +877,10 @@ header #nav #mobile-btns #mobile-special .container small {
   color: white;
 }
 #banner figure figcaption a:hover {
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 #banner figure figcaption span {
-  color: #FF7D2A;
+  color: #8CA5D3;
   padding: 0 5px;
 }
 #banner figure img {
@@ -891,7 +892,7 @@ header #nav #mobile-btns #mobile-special .container small {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #ECEDEF;
 }
 #banner p {
   font-size: 14px;
@@ -917,14 +918,14 @@ header #nav #mobile-btns #mobile-special .container small {
 
 /* After Banner */
 #bar {
-  background: #359CD6;
+  background: #C0D8E9;
   padding: 2rem 0;
 }
 #bar h3 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
-  font-size: 3rem;
-  color: #fff;
+  font-size: 40px;
+  color: #000;
   margin: 0;
 }
 #bar h3 span {
@@ -942,14 +943,15 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 100px auto 0;
 }
 #rated article {
-  background-color: #073C5F;
+  background-color: #172C41;
   flex: 60%;
   padding: 3rem 6rem;
 }
 #rated article h3 {
-  font-family: "Work Sans", serif;
-  font-weight: 600;
+  font-family: "Montserrat";
+  font-weight: 300;
   font-size: 50px;
+  text-transform: uppercase;
   color: #fff;
   margin: 10px auto 2rem;
   display: flex;
@@ -957,12 +959,12 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 @media (max-width: 1000px) {
   #rated article h3 {
-    font-size: clamp(0.9rem, 7.5vw, 9.3rem);
+    font-size: clamp(0.9rem, 6.7vw, 9.3rem);
   }
 }
 #rated article h3 small {
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat";
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -979,7 +981,7 @@ header #nav #mobile-btns #mobile-special .container small {
   gap: 1rem;
 }
 #rated article ul li {
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 28px;
   padding: 0;
@@ -988,11 +990,11 @@ header #nav #mobile-btns #mobile-special .container small {
   padding-left: 3rem;
 }
 #rated article ul li::before {
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 @media (max-width: 1000px) {
   #rated article ul li {
-    font-size: clamp(0.5rem, 5.2vw, 4.1rem);
+    font-size: clamp(0.5rem, 5.1vw, 4.1rem);
   }
 }
 #rated figure {
@@ -1021,32 +1023,33 @@ header #nav #mobile-btns #mobile-special .container small {
   opacity: 0.8;
 }
 #rated figure .caption a {
-  font-family: "Work Sans", serif;
-  font-weight: bold;
-  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.1em;
   color: #231f20;
 }
 #rated figure .caption a:hover {
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 @media (max-width: 1000px) {
   #rated figure .caption a {
-    font-size: clamp(0.9rem, 4.9vw, 9.3rem);
+    font-size: clamp(0.4rem, 3.5vw, 9.3rem);
   }
   #rated figure .caption a .mobile-hide {
     display: none;
   }
 }
 #rated .review-container {
-  background: #F2F2F2;
+  background: #C0D8E9;
   flex-flow: row;
   filter: drop-shadow(4px 4px 11px rgba(0, 0, 0, 0.23));
 }
 #rated .review-container h5 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 30px;
+  color: #000;
   margin: 0 0 10px;
   position: relative;
 }
@@ -1062,16 +1065,14 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 0;
 }
 #rated .review-container article {
-  background-color: #F2F2F2;
+  background-color: #ECEDEF;
   align-items: flex-start;
-  padding: 4rem 6rem 2rem 6rem;
+  padding: 4rem 6rem 4rem 6rem;
 }
 #rated .review-container author {
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #121618;
   text-align: left;
   text-transform: uppercase;
@@ -1079,19 +1080,27 @@ header #nav #mobile-btns #mobile-special .container small {
   align-items: center;
   justify-content: flex-start;
 }
+@media (max-width: 1000px) {
+  #rated .review-container author {
+    font-size: clamp(1rem, 5.9vw, 6.4rem);
+    font-weight: 600;
+  }
+}
 #rated .review-container author img {
   padding: 0;
+}
+#rated .review-container author star:after {
+  color: #8CA5D3;
 }
 #rated .review-container > div > * {
   text-align: left;
 }
 #rated .review-container p {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
-  font-size: 30.6px;
+  font-size: 24px;
   line-height: 1.3;
   position: relative;
-  padding-left: 1rem;
   margin: 10px auto;
 }
 @media (max-width: 1000px) {
@@ -1105,9 +1114,9 @@ header #nav #mobile-btns #mobile-special .container small {
   content: "\e838";
   position: absolute;
   right: 0px;
-  top: -64%;
+  top: -93%;
   font-family: fontello;
-  color: #FF7D2A;
+  color: #8CA5D3;
   font-size: 270px;
   transform: rotateZ(180deg);
   opacity: 0.1;
@@ -1115,7 +1124,7 @@ header #nav #mobile-btns #mobile-special .container small {
 
 /* -- mobile reviews -- */
 #mobile-reviews {
-  background-color: #f0f0f0;
+  background-color: #ECEDEF;
   padding: 4rem 30px;
 }
 #mobile-reviews .review-container {
@@ -1123,7 +1132,7 @@ header #nav #mobile-btns #mobile-special .container small {
   background-color: #fff;
   box-shadow: 1.6px 2.5px 7px rgba(7, 8, 8, 0.35);
   max-width: 1200px;
-  color: #FF7D2A;
+  color: #8CA5D3;
   align-items: center;
   padding: 0;
   margin: auto;
@@ -1148,7 +1157,7 @@ header #nav #mobile-btns #mobile-special .container small {
   padding: 5px 25px;
 }
 #mobile-reviews .review-container #google p {
-  color: #FF7D2A;
+  color: #8CA5D3;
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -1178,9 +1187,9 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: auto;
 }
 #mobile-reviews .review-container .comment p {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
-  font-size: 30.6px;
+  font-size: 24px;
   line-height: 1.3;
   margin-top: 0;
   margin-top: 10px;
@@ -1197,17 +1206,24 @@ header #nav #mobile-btns #mobile-special .container small {
   }
 }
 #mobile-reviews .review-container .comment .caption2 {
-  font: 600 normal 18px/1 "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 30px 0 10px;
-  letter-spacing: 1.95px;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  #mobile-reviews .review-container .comment .caption2 {
+    font-size: clamp(1rem, 5.9vw, 6.4rem);
+    font-weight: 600;
+  }
 }
 
 /* 2nd Quiz Section */
 #quiz {
   padding: 75px 10px;
-  background: #F2F2F2;
+  background: #ECEDEF;
 }
 #quiz .quiz .flex-ed {
   max-width: 1300px;
@@ -1216,13 +1232,13 @@ header #nav #mobile-btns #mobile-special .container small {
   gap: 2rem;
 }
 #quiz .quiz h2 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 35px;
 }
 @media (max-width: 1000px) {
   #quiz .quiz h2 {
-    font-size: clamp(0.7rem, 7vw, 5.4rem);
+    font-size: clamp(0.7rem, 5.4vw, 5.4rem);
     line-height: 1.4;
   }
 }
@@ -1231,7 +1247,7 @@ header #nav #mobile-btns #mobile-special .container small {
   font-weight: bold;
 }
 #quiz .quiz .btn {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 23px;
   letter-spacing: 0.05em;
@@ -1239,12 +1255,12 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 @media (max-width: 1000px) {
   #quiz .quiz .btn {
-    font-size: clamp(0.4rem, 5vw, 5.4rem);
+    font-size: clamp(0.4rem, 4.5vw, 5.4rem);
     line-height: 1.4;
   }
 }
 #quiz .quiz p.note {
-  font: normal 18px/1 "Work Sans", serif;
+  font: normal 18px/1 "Montserrat";
   color: grey;
   text-transform: uppercase;
 }
@@ -1267,7 +1283,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 #quiz article div {
   background-color: #231f20;
-  font: 400 24px/41px "Work Sans", serif;
+  font: 400 24px/41px "Montserrat";
   letter-spacing: 1.2px;
   color: #fff;
   text-align: center;
@@ -1281,7 +1297,7 @@ header #nav #mobile-btns #mobile-special .container small {
 #quiz article div span {
   display: block;
   text-transform: none;
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   font-weight: 500;
   margin: 0 auto 0;
   font-size: 42px;
@@ -1298,7 +1314,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 #quiz article div small {
   font-size: 28px;
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   font-weight: 700;
   letter-spacing: 0.05em;
   display: block;
@@ -1329,7 +1345,7 @@ header #nav #mobile-btns #mobile-special .container small {
   padding: 5px;
 }
 .callouts .col h3 {
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 30px;
   line-height: 35px;
@@ -1344,7 +1360,7 @@ header #nav #mobile-btns #mobile-special .container small {
   }
 }
 .callouts .col:hover h3 {
-  color: #073C5F;
+  color: #172C41;
 }
 .callouts .portrait {
   width: 100%;
@@ -1374,7 +1390,7 @@ header #nav #mobile-btns #mobile-special .container small {
   right: 0;
 }
 .callouts .portrait:hover:after {
-  border-color: #FF7D2A;
+  border-color: #8CA5D3;
 }
 .callouts .portrait img {
   position: relative;
@@ -1401,8 +1417,17 @@ header #nav #mobile-btns #mobile-special .container small {
   flex-wrap: wrap;
 }
 #options h2 {
-  font: bold 60px/66px "Work Sans", serif;
   margin-bottom: 25px;
+  font-family: "Montserrat";
+  color: #172C41;
+  font-weight: 300;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+  #options h2 {
+    font-size: clamp(1rem, 10vw, 1.9rem);
+  }
 }
 #options .col {
   background-color: transparent;
@@ -1412,9 +1437,13 @@ header #nav #mobile-btns #mobile-special .container small {
   font-size: 30px;
   color: #231f20;
   letter-spacing: normal;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   margin: 0 0 25px;
+}
+#options .col p {
+  font-weight: normal;
+  font-size: 20px;
 }
 #options .col .portrait {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
@@ -1429,7 +1458,7 @@ header #nav #mobile-btns #mobile-special .container small {
 #choice figcaption {
   margin-top: 10px;
   letter-spacing: 2.2px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1443,7 +1472,7 @@ header #nav #mobile-btns #mobile-special .container small {
 }
 
 #secondary {
-  background: #073C5F;
+  background: #172C41;
   margin: 0 auto 10px;
   padding: 50px 20px 40px;
 }
@@ -1453,7 +1482,7 @@ header #nav #mobile-btns #mobile-special .container small {
 #secondary .callouts .icon-map-marker {
   top: -5px;
   font-size: 30px;
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 #secondary .callouts .portrait {
   min-height: 260px;
@@ -1461,16 +1490,16 @@ header #nav #mobile-btns #mobile-special .container small {
 #secondary .callouts .portrait:after {
   width: 92%;
   height: 92%;
-  border: 4px solid #FF7D2A;
+  border: 4px solid #8CA5D3;
 }
 #secondary .callouts .portrait:hover:after {
-  border-color: #073C5F;
+  border-color: #172C41;
 }
 #secondary a {
   flex: 0 0 255px;
 }
 #secondary a:hover star:after {
-  color: #073C5F;
+  color: #8CA5D3;
 }
 #secondary a h3 {
   letter-spacing: 0.26px;
@@ -1478,11 +1507,11 @@ header #nav #mobile-btns #mobile-special .container small {
   margin: 0 auto;
   color: #1a1a1a;
   font-weight: normal;
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   font-size: 28px;
 }
 #secondary a h3 star:after {
-  color: #FEBB21;
+  color: #8CA5D3;
 }
 
 i:before {
@@ -1501,7 +1530,7 @@ i:before {
 #team figcaption {
   margin-top: 10px;
   color: #2b2b2b;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-size: 18px;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -1511,18 +1540,18 @@ i:before {
   color: #2b2b2b;
   font-size: 18px;
   letter-spacing: 0.1em;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 700;
 }
 #team figcaption a:hover {
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 
 /* ---------------- Contact --------------- */
 footer {
   padding-top: 70px;
-  background-color: #073C5F;
+  background-color: #172C41;
 }
 footer .flex-ed {
   justify-content: center;
@@ -1539,37 +1568,37 @@ footer article {
   box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
 }
 footer .phone {
-  font-family: "Work Sans", sans-serif;
-  font-weight: normal;
+  font-family: "Montserrat";
+  font-weight: 600;
   font-size: 40px;
-  color: #FF7D2A;
+  color: #8CA5D3;
   margin: 10px auto;
   display: block;
 }
 footer .phone:hover {
-  color: #073C5F;
+  color: #172C41;
 }
 @media (max-width: 1000px) {
   footer .phone {
-    font-family: "Work Sans", serif;
+    font-family: "Montserrat";
     font-size: clamp(1rem, 6.9vw, 2rem);
   }
 }
 footer .phone:hover {
-  color: #073C5F;
+  color: #172C41;
 }
 footer .address {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 20px;
   color: #000;
   margin-top: 20px;
 }
 footer .address:hover {
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
 footer h2 {
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 50px;
 }
@@ -1580,7 +1609,7 @@ footer h2 {
   }
 }
 footer h3 {
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 30px;
   margin-top: 20px;
@@ -1633,6 +1662,23 @@ footer .desktop-hide {
   display: block;
 }
 
+#best-choice article h2 {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: clamp(0.9rem, 11.5vw, 3.9rem);
+  text-transform: uppercase;
+  color: #172C41;
+  padding: 0 5rem;
+}
+@media (max-width: 1000px) {
+  #best-choice article h2 {
+    font-size: clamp(0.9rem, 7.5vw, 2.3rem);
+  }
+}
+#best-choice article p {
+  font-size: 23px;
+}
+
 #services {
   order: -1;
 }
@@ -1645,15 +1691,15 @@ footer .desktop-hide {
   margin: 10px auto;
   list-style: none;
   text-align: center;
-  border: 1px solid #FF7D2A;
+  border: 1px solid #8CA5D3;
 }
 #services li a {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   color: #fff;
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 0.05em;
-  background-color: #FF7D2A;
+  background-color: #8CA5D3;
   display: block;
   text-transform: uppercase;
   padding: 25px 20px 22px;
@@ -1664,7 +1710,7 @@ footer .desktop-hide {
   }
 }
 #services li a:hover {
-  background-color: #073C5F;
+  background-color: #172C41;
 }
 #services li a:hover a {
   color: white;
@@ -1683,7 +1729,7 @@ footer .desktop-hide {
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
 }
 .simple .btn:hover {
-  background-color: #073C5F;
+  background-color: #172C41;
   color: #fff;
 }
 .simple input {
@@ -1708,7 +1754,7 @@ footer .desktop-hide {
 .simple textarea:focus,
 .simple .btn:focus {
   background-color: #f7f4f4;
-  box-shadow: inset 0 3px 0 #073C5F;
+  box-shadow: inset 0 3px 0 #172C41;
 }
 
 ::-moz-placeholder {
@@ -1720,7 +1766,7 @@ footer .desktop-hide {
 }
 
 .copy {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 18px;
   color: #fff;
@@ -1728,17 +1774,28 @@ footer .desktop-hide {
   text-align: center;
   padding: 10px 0 60px;
 }
+@media (max-width: 1000px) {
+  .copy {
+    font-size: clamp(0.9rem, 3.6vw, 2rem);
+  }
+}
 .copy span {
-  padding: 0 5px;
+  padding: 0 1rem;
 }
-.copy a {
+.copy #copyDate {
+  padding: 0;
+}
+.copy .links {
+  display: inline;
+}
+.copy .links a {
   margin: auto;
-  color: #FF7D2A;
+  color: #8CA5D3;
 }
-.copy a:hover {
+.copy .links a:hover {
   color: #fff;
 }
-.copy a:last-of-type {
+.copy > a:last-of-type {
   color: #fff;
 }
 
@@ -1752,7 +1809,7 @@ footer .desktop-hide {
 #landing-page-form h1 {
   font-size: 50px;
   margin-bottom: 30px;
-  color: #073C5F;
+  color: #172C41;
   text-align: center;
   padding-top: 20px;
   font-weight: 400;
@@ -2015,6 +2072,30 @@ hr {
   }
 }
 @media (max-width: 1000px) {
+  .btn {
+    min-width: initial;
+  }
+  #banner {
+    flex-direction: column;
+  }
+  #banner article {
+    margin: 0;
+    padding: 1.5rem 0.5rem 2rem;
+  }
+  #banner article h1 {
+    margin: 1rem 0;
+  }
+  #banner article .quiz {
+    padding: 0 1rem;
+  }
+  #banner article .quiz .flex-ed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  #banner article .quiz .btn {
+    padding: 0.5rem 1.5rem 0.4rem;
+  }
   .flex-row {
     flex-direction: column;
   }
@@ -2022,7 +2103,7 @@ hr {
     width: 100%;
   }
   #bar {
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
   }
   #reviews {
     padding: 0;
@@ -2033,20 +2114,37 @@ hr {
   #review-container {
     flex-wrap: wrap;
   }
+  #rated {
+    margin: 0;
+    padding: 5rem 1.5rem 5rem;
+  }
   #rated article {
-    padding: 3rem 1.5rem 3rem 2rem;
+    padding: 5rem 1.5rem 3rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
   }
   #rated article h3 {
     margin: 0;
   }
-  #rated {
-    padding: 0rem 2rem 4rem;
+  #rated article ul li {
+    padding-left: 2rem;
   }
   #rated .review-container {
     display: none;
+  }
+  #rated figure .caption {
+    opacity: 1;
+  }
+  #mobile-reviews {
+    background-color: #8CA5D3;
+    padding: 5rem 1.5rem;
+  }
+  #mobile-reviews .review-container .comment {
+    padding: 0 2rem 2rem;
+  }
+  #options {
+    padding: 0.5rem 1.5rem;
   }
   #google {
     flex: 0 1 100%;
@@ -2109,15 +2207,10 @@ hr {
   #banner {
     background: none;
   }
-  #banner article {
-    min-width: 450px;
-    padding: 40px 20px 50px;
-  }
   #banner .flex-ed {
     display: block;
   }
   #banner article {
-    margin: 10px auto 20px;
     padding-top: 20px;
   }
   #banner figure {
@@ -2125,6 +2218,7 @@ hr {
   }
   .split {
     flex-direction: column;
+    padding: 0 1.5rem 5rem;
   }
   .split article {
     max-width: 100%;
@@ -2159,8 +2253,32 @@ hr {
   #secondary a {
     flex: 0 0 255px;
   }
+  #best-choice {
+    padding: 2rem 1rem 4rem;
+  }
+  #best-choice article {
+    padding: 0;
+  }
+  #best-choice article h2 {
+    padding: 0 0 1.5rem;
+  }
+  #best-choice article p {
+    font-size: clamp(0.9rem, 4.5vw, 5.4rem);
+    padding: 0 0.5rem;
+  }
+  #best-choice article .btn {
+    font-size: clamp(0.6rem, 3.7vw, 5.4rem);
+  }
+  #best-choice figure {
+    padding: 0 0.5rem;
+  }
+  #quiz .quiz .flex-ed {
+    display: flex;
+    flex-direction: column;
+  }
   #quiz .quiz article {
-    padding: 0.3rem 1rem 1rem;
+    padding: 0.3rem 0 1rem;
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
@@ -2195,6 +2313,13 @@ hr {
   }
   .copy {
     margin-top: 0;
+    padding: 3rem 1.5rem 4rem;
+  }
+  .copy .links {
+    display: block;
+  }
+  .copy .mobile-hide {
+    display: none;
   }
   #quiz .quiz .btn {
     padding: 0.7rem 1rem 0.7rem;
@@ -2281,9 +2406,6 @@ hr {
   #nav .logo {
     max-width: 90%;
   }
-  #banner h1 {
-    margin-bottom: 3rem;
-  }
   h1 span {
     margin: 10px;
   }
@@ -2294,7 +2416,6 @@ hr {
     padding-left: 60px;
   }
   #banner article {
-    min-width: 300px;
     margin-top: 0;
   }
   #banner article div {
@@ -2327,14 +2448,10 @@ hr {
   .even {
     flex-direction: column-reverse;
   }
-  .even figure {
-    padding: 0 1.4rem;
-  }
   .odd {
     flex-direction: column;
   }
   .split {
-    padding: 0 1.3rem 3rem;
     flex: 1;
   }
   .split article {
@@ -2353,9 +2470,6 @@ hr {
   .split.odd .btn {
     padding: 1rem 1.6rem;
   }
-  .copy {
-    padding: 40px 10px;
-  }
   #map {
     display: none;
   }
@@ -2372,7 +2486,6 @@ hr {
     display: initial;
   }
   .btn {
-    min-width: auto;
     max-width: 100%;
   }
   #banner .quiz h2 {
@@ -2381,18 +2494,11 @@ hr {
   #banner .quiz article {
     padding: 15px;
   }
-  #banner .quiz .btn {
-    padding: 5px 25px;
-  }
   #quiz article {
     padding: 20px 10px;
   }
 }
 @media (max-width: 400px) {
-  #banner h1 {
-    margin-bottom: 10px;
-    margin-top: 30px;
-  }
   #banner article div {
     padding-top: 10px;
   }
@@ -2430,9 +2536,6 @@ hr {
   .split article .btn {
     padding: 10px 20px;
     font-size: 18px;
-  }
-  #banner article {
-    min-width: 250px;
   }
   footer article {
     margin: 20px;

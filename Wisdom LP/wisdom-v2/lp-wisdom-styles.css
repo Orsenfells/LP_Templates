@@ -666,15 +666,16 @@ address a:hover {
   font-weight: bold;
   font-size: 44px;
   letter-spacing: 0.1em;
-  background-color: #003875;
   padding: 10px;
   margin: auto;
+  background-color: none;
 }
 #nav .btn span small {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   display: block;
+  background-color: none;
 }
 #nav .btn i {
   margin: auto;
@@ -683,6 +684,7 @@ address a:hover {
 }
 #nav .btn:hover {
   color: #fff;
+  background-color: #CDBD9B;
 }
 #nav .pho span {
   font-family: "Lato", sans-serif;
@@ -788,7 +790,7 @@ address a:hover {
 #banner h1 {
   font-family: "Playfair Display";
   font-weight: normal;
-  font-size: 76px;
+  font-size: clamp(1rem, 4.7vw, 6rem);
   letter-spacing: -0.02em;
   color: #fff;
   margin-bottom: 0;
@@ -947,7 +949,7 @@ address a:hover {
 }
 #options h3 {
   font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
   font-size: clamp(1rem, 2.5vw, 5rem);
   letter-spacing: 0.03em;
   color: #fff;
@@ -1123,7 +1125,7 @@ address a:hover {
 #review-section .review:first-of-type p {
   font-family: "Lato", sans-serif;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 19px;
   color: #000;
 }
 @media (max-width: 1000px) {
@@ -1136,7 +1138,7 @@ address a:hover {
 #review-section .review p {
   font-family: "Lato", sans-serif;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 19px;
   color: #000;
 }
 @media (max-width: 1000px) {
@@ -1210,7 +1212,7 @@ address a:hover {
 #map-section .flex-row > div h3 {
   font-family: "Saol Display";
   font-weight: normal;
-  font-size: 25px;
+  font-size: 29px;
   letter-spacing: 0.03em;
   color: #fff;
 }
@@ -1223,7 +1225,7 @@ address a:hover {
   border-radius: 1rem;
 }
 #map-section .flex-row > div a {
-  font-family: "Saol Display";
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -1692,7 +1694,7 @@ footer .simple input, footer .simple textarea {
   gap: 8rem;
 }
 #footer-content .simple h3 {
-  font-family: "Saol Display";
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #000;
@@ -1731,7 +1733,7 @@ footer .simple input, footer .simple textarea {
 #footer-content .started p {
   font-family: "Lato", sans-serif;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 18px;
   color: #000;
 }
 .contact-form .simple {
