@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="$var(metaDescription)$" name="Description" />
+    <link href="lp-sedation-styles.css" type="text/css" rel="stylesheet">
+    <link href="lp-sedation-slick.css" type="text/css" rel="stylesheet">
+
+	<title>$var(pageTitle)$</title>
+    <link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link href="https://tntwebsites.com/tnticons/css/fontello.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/khb7wsi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script async src='https://tag.simpli.fi/sifitag/d0839950-0d38-0137-dfb5-06a9ed4ca31b'></script>
+</head>
+<body>
+    <div id="fixed-tabs">
+         <a href="lp-sedation-form.html" class="ra">
+            <span><i class="icon-calendar-1"></i>Request <strong>a Consultation</strong></span>
+        </a>
+        <a href="tel:9197870355" target="_blank">
+            <span><i class="icon-phone"></i>Call <strong>Our Office</strong></span>
+        </a>
+        <a href="https://maps.app.goo.gl/Ppjq67WgFdvPZa9Q8" target="_blank">
+            <span><i class="icon-location"></i>Map <strong>Us</strong></span>
+        </a>
+    </div>
+    
+    <header>
+        <div id="info-bar">
+            <span>New Patients Welcome</span>
+            <span>•</span>
+            <span>Same-Day Appointments Available</span>
+        </div>
+        <div id="nav">
+            <a href="index.html" class="logo">
+             <img src="assets/images/lp-sedation-logo-header.png" alt="Smile More Dentistry logo"/>
+            </a>
+            <div class="header-details">
+                <a href="tel:+9197870355" class="phone">
+                
+                    (919) 787-0355</a>
+                 <a href="https://maps.app.goo.gl/Ppjq67WgFdvPZa9Q8" target="_blank" class="phy">
+                
+                     415 Vick Ave <br>
+                Raleigh, NC 27612
+                 </a>
+            </div>
+          
+             <a href="lp-sedation-form.html" class="btn">
+          
+                 Free Consultation
+             </a>
+             <div id="mobile-btns">
+                 <a href="tel:9197870355" class="phone">
+                     <span>Call Today!</span>
+                     (919) 787-0355
+                 </a>
+                 <a href="lp-sedation-form.html" class="btn">
+                     <span>Request</span>
+                     An Appointment
+                 </a>
+             </div>
+        </div>
+    </header>
+
+    <main>
+    
+    <!-- <div id="banner-wrapper">
+    <section id="banner">
+       
+        <div class="flex-ed">
+            <article>
+                <h1>Anxious? Afraid?<br>
+                    Physical Limitations?<br>
+                    Extreme Sensitivity?</h1>
+                <h2>You’ve Found the Right Dentist.</h2>
+                <p>You are not alone. More than 40 million Americans are afraid to go to the dentist – even though they know they need to. We understand, and everything we do at Blue Coast Dental Group is intended to help you relax and be comfortable.</p>
+                <img alt="enjoy stress-free dental care badge" src="assets/images/lp-sedation-request-badge.png" id="request-badge-mobile">
+            </article>
+            <figure>
+                <picture>
+                    <source media="(max-width: 790px)" srcset="assets/images/lp-sedation-banner-mobile.jpg" />
+                    <source media="(min-width: 790px)" srcset="assets/images/lp-sedation-banner.jpg" />
+                    <img src="assets/images/lp-sedation-banner.jpg" alt="woman smiling" />
+                </picture>
+            </figure> 
+        </div>
+        </section>
+    </div> -->
+    <div id="info-bar">
+        <span>New Patients Welcome</span>
+        <span>•</span>
+        <span>Same-Day Appointments Available</span>
+    </div>
+    <section id="banner" class="split-section">
+
+  
+        <div class="container">
+        
+            <article>
+                <h1>Anxious? Afraid?<br>
+                    Physical Limitations?<br>
+                    Extreme Sensitivity?</h1>
+                <h2>You’ve Found the Right Dentist.</h2>
+                <p>Experience peace of mind with our same-day emergency services, especially when paired with our relaxing sedation options. Our unique team includes both male and female doctors, allowing patients to enjoy diverse perspectives. Our office is unlike the normal dental environment, providing an escape for patients. We also offer private, standalone operatories where patients can enjoy the utmost privacy and comfort during their visit.</p>
+
+                
+            </article>
+            <figure>
+                <picture>
+                    <source media="(max-width: 790px)" srcset="assets/images/lp-sedation-banner-mobile.png" />
+                    <source media="(min-width: 790px)" srcset="assets/images/lp-sedation-banner.png" />
+                    <img src="assets/images/lp-sedation-banner.png" alt="woman smiling" />
+                </picture>
+           
+            </figure>
+        </div>
+    </section>
+<section id="mid-form">
+    <div class="container">
+        <article>
+            <h2 class="mobile-hide">Request a FREE Consult</h2>
+            <h2 class="desktop-hide">Request <br> a FREE <br>Consultation</h2>
+
+        </article>
+        <div class="form-container">
+            <form action="https://tnt-adder.herokuapp.com/submit/efad7fe3-c7ad-4c20-b3aa-0b6198994414" method="post" >
+                <div>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="email" placeholder="Email Address" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div>
+                    <textarea placeholder="Please tell us why you’re looking for sedation dentistry?" name="why sedation?"></textarea>
+                    <button class="btn">Submit</button>
+                    <input name="_subject" type="hidden" value="LP Sedation Mid Form" />
+                    <input name="_redirect" type="hidden" value="thanks.html" />
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+   
+ 
+    <section id="options">
+        <h2>Wake Up with a Healthier, Brighter smile!</h2>
+        <div class="flex-row">
+            <div class="">
+              <img src="assets/images/lp-sedation-wake-1.png" alt="">
+                <h3>
+                    No Judgement
+                </h3>
+            </div>
+            <div class="">
+                <img src="assets/images/lp-sedation-wake-2.png" alt="">
+                  <h3>
+                      No Lectures
+                  </h3>
+              </div>
+              <div class="">
+                <img src="assets/images/lp-sedation-wake-3.png" alt="">
+                  <h3>
+                      No Guilt Trips
+                  </h3>
+              </div>
+        </div>
+     </section>
+
+     <!-- <section id="affil">
+        <h4>AWARDS & RECOGNITION</h4>
+        <div>
+            <span><img src="assets/images/lp-sedation-assoc-1.png" alt="Top Dentist 2023 logo"></span>
+            <span><img src="assets/images/lp-sedation-assoc-2.png" alt="2023 the talk awards winner logo"></span>
+            <span><img src="assets/images/lp-sedation-assoc-3.png" alt="national academy of best-selling authors logo"></span>
+            <span><img src="assets/images/lp-sedation-assoc-4.png" alt="N J's favorite kids' docs logo"></span>
+            <span><img src="assets/images/lp-sedation-assoc-5.png" alt="new jersey top dentists logo"></span>
+            <span><img src="assets/images/lp-sedation-assoc-6.png" alt="new jersey top dentists logo"></span>
+            <span><img src="assets/images/lp-sedation-assoc-7.png" alt="new jersey top dentists logo"></span>
+            <span><img src="assets/images/lp-sedation-assoc-8.png" alt="new jersey top dentists logo"></span>
+        </div>
+    </section> -->
+
+   <section id="why">
+    <div class="container flex-col">
+        <h2>
+            Why Choose Us?
+        </h2>
+        <div class="flex-row">
+            <div class="flex-col">
+                <figure>
+                    <img src="assets/images/lp-sedation-why-icon-1.png" alt="">
+                </figure>
+                <article>
+                    <h3>
+                        We Treat Patients
+                        Like Family
+                    </h3>
+                    <p>
+                        Our top priority is always building warm, trusting relationships that last.
+                    </p>
+                </article>
+            </div>
+            <div class="flex-col">
+                <figure>
+                    <img src="assets/images/lp-sedation-why-icon-2.png" alt="">
+                </figure>
+                <article>
+                    <h3>
+                        All Dentistry
+                        Under One Roof
+                    </h3>
+                    <p>
+                        From essential checkups to cosmetic makeovers, your smile is covered.
+                    </p>
+                </article>
+            </div>
+            <div class="flex-col">
+                <figure>
+                    <img src="assets/images/lp-sedation-why-icon-3.png" alt="">
+                </figure>
+                <article>
+                    <h3>
+                        All Ages
+                        Welcome
+                    </h3>
+                    <p>
+                        Our dentists in Raleigh see patients from the age of the 3 all the way up to 103!
+                    </p>
+                </article>
+            </div>
+            <div class="flex-col">
+                <figure>
+                    <img src="assets/images/lp-sedation-why-icon-4.png" alt="">
+                </figure>
+                <article>
+                    <h3>
+                        Sedation
+                        Dentistry
+                    </h3>
+                    <p>
+                        We offer oral conscious sedation along with IV sedation.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section id="tour">
+    <div class="container flex-col">
+        <h2>
+            Tour Our Dental Office
+        </h2>
+    <figure class="desktop-hide">
+        <img src="assets/images/lp-sedation-tour-mobile.png" alt="">
+    </figure>
+  <section class="lazy slider mobile-hide" >
+    <div>
+      <img data-lazy="assets/images/lp-sedation-tour-1.png" >
+
+    </div>
+    <div>
+        <img data-lazy="assets/images/lp-sedation-tour-1.png" >
+    </div>
+      <!-- <div>
+        <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="http://placehold.it/650x300?text=3-650w 650w, http://placehold.it/960x300?text=3-960w 960w" data-sizes="100vw">
+      </div> -->
+   
+    
+  </section>
+  <a href="tour-our-office.html" class="desktop-hide btn">Tour Our Office</a>
+    </div>
+   </section>
+
+
+   <section class="financing">
+    <div class="container flex-col">
+        <article class="flex-col">
+            <h2>Smile Now, Pay Later</h2>
+            <h3>
+                Financing Options
+            </h3>
+            <p>No need to worry about how to pay for the dental care you need! We offer multiple low-to-no-interest financing plans for every budget, including an in-house dental plan. Our fees are broken down into manageable monthly chunks to make quality dentistry affordable for everyone. Simply choose financing provided by CareCredit and Sunbit or sign up for our in-house membership plans to start saving!</p>
+        
+    
+        </article>
+        <div class="flex-row">
+            <a href="" class="btn">Learn More</a>
+
+            <div class="flex-row">
+                <figure>
+                    <img src="assets/images/lp-sedation-insurance-logo-1.png" alt="">
+
+                </figure>
+                <figure>
+                    <img src="assets/images/lp-sedation-insurance-logo-2.png" alt="">
+
+                </figure>
+            </div>
+
+        </div>
+    </div>            
+
+
+</section>
+
+
+   <section class="split-section" id="dentist">
+    <div class="container">
+        <figure>
+            <img src="assets/images/lp-np-combo-doctor.png" alt="" />
+        </figure>
+        <article>
+            <h2>
+                Learn More About  <br>
+                Dr. Brandon D. Rensch!
+            </h2>
+            <p>
+                From the very first visit, we know that the amount of high-quality care, kindness, and attention to detail that Dr. Rensch puts into his work will be crystal-clear to new visitors. Better yet, his experience results in a comfortable dental office environment that’s very welcoming to all ages! From smile-rebuilding dental implants to essential emergency dentistry, in his treatment chair, every nearby patient is known and cared for as a person first – no exceptions.            </p>
+
+                <figure>
+                    <picture>
+                        <source media="(max-width: 790px)" srcset="assets/images/lp-sedation-insurance-logos-mobile.png" />
+                        <source media="(min-width: 790px)" srcset="assets/images/lp-sedation-insurance-logos.png" />
+                        <img src="assets/images/lp-sedation-insurance-logos.png" alt="woman smiling" />
+                    </picture>                </figure>
+                
+        </article>
+    </div>
+  
+</section>
+
+
+<section id="reviews">
+    <div id="review-container" class="container flex-ed">
+        <article>
+            <div class="star"></div>
+            <h2>
+                Actual  <br>
+                Patient  <br>
+                Reviews…
+            </h2>
+            <a href="reviews.html" class="btn" target="_blank">Read More </a>
+        </article>
+   
+        <div class="comment">
+            
+            <p>Dr Rensch is an excellent dentist. I always get nervous at the dentist. He made me feel very <strong>comfortable</strong> and calm through the whole visit</p>
+            <div id="caption">
+                <p class="caption2">- Lacy S.</p>
+              
+            </div>
+        </div>
+        <!-- <a href="reviews.html" class="btn desktop-hide">Read More</a> -->
+    </div>
+</section>
+
+
+<section class="split-section" id="where">
+    <div class="container">
+      
+        <article>
+            <h2>
+                Where to Find Us
+            </h2>
+            <p>
+                Our state-of-the-art facility is located in the North Raleigh community. It is convenient for patients across North Carolina and offers the finest staff and a super-clean, comfortable environment. Please check the maps below to find a surgery center near you.</p>
+        </article>
+        <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.1883812879883!2d-78.66680031627044!3d35.82412975000029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac580e4f9aadcb%3A0x134a96b4e842ed2a!2sConnection%20Dentistry!5e0!3m2!1sen!2sus!4v1715995857604!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>
+    </div>
+  
+</section>
+   
+</main>
+
+<footer>
+    <div id="footer-content" class="flex-row">
+       <div class="started">
+            <figure>
+                <a href="index.html"><img src="assets/images/lp-sedation-logo-footer.png" alt=""/></a>
+            </figure>
+            <article>
+                <h2>
+                    How to Get Started
+                </h2>
+                <p>
+                    Thank you for taking the time to consider Connection Dentistry. We look forward to having the opportunity to speak with you and to meet in person. Please feel free to give us a call or to complete the New Patient Request Form on this page. We promise to get back to you as soon as possible. Take care.
+                </p>
+            </article>
+       </div>
+       <div class="office-details">
+        <article>
+            <h3>
+                Contact Us
+            </h3>
+            <address>
+                <a href="https://maps.app.goo.gl/Ppjq67WgFdvPZa9Q8" target="_blank" class="address">
+                    415 Vick Ave 
+Raleigh, NC 27612
+                </a>
+            </address>
+            <div class="phone">    
+                <a href="tel:+9197870355">(919) 787-0355</a>
+            </div>
+        </article>
+        <article>
+            <h3>
+                Office Hours
+            </h3>
+            <ul>
+                <li><label>Monday</label><span>8:00am - 3:00pm
+                </span></li>
+                <li><label>Tuesday</label><span>8:00am - 3:00pm
+                </span></li>
+                <li><label>Wednesday</label><span>8:00am - 5:00pm
+                </span></li>
+                <li><label>Thursday</label><span>8:00am - 3:00pm
+                </span></li>
+
+            </ul>
+        </article>
+       </div>
+
+    </div> 
+ 
+    <div id="copyright"> <span>© <span id="copyDate"></span> Connection Dentistry <br class="desktop-hide"> <span class="mobile-hide">|</span> <a href="sitemap.html">Sitemap</a> <span>|</span> <a href="privacy-policy.html">Privacy Policy</a>  <br class="desktop-hide"><span class="mobile-hide">|</span> Site designed and maintained by <a href="https://www.tntdental.com" target="_blank">TNT Dental</a></span></div>
+  </footer>
+  <script src="assets/js/lp-sedation-jquery.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="assets/js/lp-sedation-scripts.js"></script>
+
+</body>
+</html>
